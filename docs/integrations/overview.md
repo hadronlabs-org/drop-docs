@@ -240,8 +240,13 @@ const exchangeRate = parseFloat(
 Withdrawal NFT represents the promise to return the user ASSET tokens once unbonding period is over.
 The user receives an NFT once they provide dASSET to unstake.
 
-Here's the example on how to work with withdrawal NFT from the generated client:
-https://github.com/hadronlabs-org/drop-contracts/blob/f1a36cb49d7c983fba2943c99c30922a742af2bf/integration_tests/src/testcases/core.test.ts#L1861
+Here's the example on how to get the withdrawal NFT info from via generated client:
+
+```tsx
+const vouchers = await withdrawalVoucherContractClient.queryTokens({
+    owner: neutronUserAddress,
+});
+```
 
 ## Actions
 
@@ -257,6 +262,17 @@ Any action is represented as exchanging one token for another:
 
 ### Staking
 
+Staking with Drop is done by the following message to the `core` contract **with assets to stake attached**:
+
+```json
+{
+  "bond": {
+    "receiver": "neutron1receiveraddress"
+  }
+}
+```
+
+For specifying the staking referral see [Referral program integration](integrations/referral)
 
 Example of using the TS client:
 
@@ -277,7 +293,12 @@ const bondTxResult = await coreContractClient.bond(
 
 ### Unstaking request
 
-For **exchangeRate** see [Exchange rate](https://www.notion.so/Exchange-rate-b4e956d13926493e8d4c4fdbc7176a6d?pvs=21).
+To make an unstaking request, one should send the dASSET to the core contract with the following message:
+```json
+{
+  "unbond": {}
+}
+```
 
 Example of using the TS client:
 
@@ -295,17 +316,16 @@ let unBondTxResult = await coreContractClient.unbond(
 );
 ```
 
-After that, you will receive a withdrawal voucher that you can use to withdraw you coins after unbonding period ends (https://github.com/hadronlabs-org/drop-contracts/blob/f1a36cb49d7c983fba2943c99c30922a742af2bf/integration_tests/src/testcases/core.test.ts#L1859).
-
-```tsx
-const vouchers = await withdrawalVoucherContractClient.queryTokens({
-    owner: neutronUserAddress,
-});
-```
+After that, user receives a withdrawal voucher that they can use to withdraw their coins after the unbonding period.
 
 ### Withdrawal
 
-**tokenId** is available after previous query (list of voucher NFTs: https://github.com/hadronlabs-org/drop-contracts/blob/f1a36cb49d7c983fba2943c99c30922a742af2bf/integration_tests/src/testcases/core.test.ts#L1866)
+Withdrawal of the ASSET implies sending the NFT to `withdrawal_manager` with the following message attached:
+```json
+{
+    "withdraw": {}
+}
+```
 
 Example of using the TS client:
 
