@@ -8,9 +8,9 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Neutron Docs',
-  tagline: 'Neutron',
-  url: 'http://docs.neutron.org',
+  title: 'Drop docs',
+  tagline: 'Drop',
+  url: 'http://docs.drop.money',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'neutron-org', // Usually your GitHub org/user name.
-  projectName: 'neutron-docs', // Usually your repo name.
+  organizationName: 'hadronlabs-org', // Usually your GitHub org/user name.
+  projectName: 'drop-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -73,20 +73,20 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Neutron',
-        logo: {
-          alt: 'Neutron Logo',
-          src: 'img/logo.jpeg',
-        },
+        title: 'Drop',
+        // logo: {
+        //   alt: 'Drop Logo',
+        //   src: 'img/logo.jpeg',
+        // },
         items: [
           {
             type: 'doc',
-            docId: 'neutron/overview',
+            docId: 'overview',
             position: 'left',
             label: 'Introduction',
           },
           {
-            href: 'https://github.com/neutron-org',
+            href: 'https://github.com/hadronlabs-org',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,29 +109,29 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/neutron',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.neutron.org/',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/Neutron_org',
-              },
-            ],
-          },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/neutron',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discord.neutron.org/',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/Neutron_org',
+          //     },
+          //   ],
+          // },
           {
             title: 'More',
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/neutron-org/neutron',
+                href: 'https://github.com/hadronlabs-org/drop-contracts',
               },
             ],
           },
