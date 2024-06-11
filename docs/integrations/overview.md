@@ -351,10 +351,57 @@ const voucherWithdrawTxResult = await voucherContractClient.sendNft(
 
 ### LSM Share Bond
 
-In order to bond shares if you already have some staked assets, all you need is to:
+##### To create tokenized share:
 
-1. Transfer your shares to neutron account
-2. Execute bond method with attached IBC tokenized shares
+```json
+{
+  "@type": "/cosmos.staking.v1beta1.MsgTokenizeShares",
+  "delegator_address": "cosmos_delegator_address",
+  "validator_address": "cosmosvaloper_validator_address_to_whom_you_staked",
+  "amount": {
+    "denom": "denom",
+    "amount": "1234"
+  },
+  "tokenized_share_owner": "cosmos_tokenized_share_owner"
+}
+```
+
+In order to reveal how many tokens you staked with validators from certain delegator use this query:
+
+```bash
+gaiad q staking delegations cosmos_delegator_address --node $THETA_TESTNET_NODE_ADDRESS
+```
+
+##### To do IBC transfer to neutron:
+
+```json
+{
+  "@type": "/ibc.applications.transfer.v1.MsgTransfer",
+  "source_port": "transfer",
+  "source_channel": "channel-123",
+  "token": {
+    "denom": "cosmosvaloper1**************************************/123",
+    "amount": "1234"
+  },
+  "sender": "cosmos1_sender",
+  "receiver": "neutron1_receiver",
+  "timeout_height": "0",
+  "timeout_timestamp": "12345",
+  "memo": ""
+}
+```
+
+In order to reveal:
+
+- `source_channel` you can use "relayers" [page](https://www.mintscan.io/cosmos/relayers) on mintscan
+- `timeout_timestamp` you can use this js snippet:
+  ```js
+  Math.floor(Date.now() / 1000) * 1e9 + 10 * 60 * 1e9;
+  ```
+
+##### To do stake share with drop:
+
+Follow [this](#staking) instruction, where denom is your IBC-bridged to Neutron share.
 
 Example of using the TS client:
 
