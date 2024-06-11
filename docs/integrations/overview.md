@@ -372,6 +372,8 @@ In order to reveal how many tokens you staked with validators from certain deleg
 gaiad q staking delegations cosmos_delegator_address --node $THETA_TESTNET_NODE_ADDRESS
 ```
 
+Also, please notice, that `validator_address` to whom you want deledate your tokens should be taken from out _white list_. To get this white list you need to query it from validators_set_contract. You can take it's address from core contract `config` query. In order to get validator set from given contract you need to query `validators` method.
+
 ##### To do IBC transfer to neutron:
 
 ```json
@@ -394,7 +396,7 @@ gaiad q staking delegations cosmos_delegator_address --node $THETA_TESTNET_NODE_
 In order to reveal:
 
 - `source_channel` you can use "relayers" [page](https://www.mintscan.io/cosmos/relayers) on mintscan
-- `timeout_timestamp` you can use this js snippet:
+- `timeout_timestamp` you can use this js snippet (timeout for 10mins will be enough):
   ```js
   Math.floor(Date.now() / 1000) * 1e9 + 10 * 60 * 1e9;
   ```
