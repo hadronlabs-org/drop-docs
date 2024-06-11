@@ -372,7 +372,7 @@ In order to reveal how many tokens you staked with validators from certain deleg
 gaiad q staking delegations cosmos_delegator_address --node $THETA_TESTNET_NODE_ADDRESS
 ```
 
-Also, please notice, that `validator_address` to whom you want delegate your tokens should be taken from out _white list_. To get this white list you need to query it from validators_set_contract. You can take it's address from core contract `config` query. In order to get validator set from given contract you need to query `validators` method.
+Also, please notice, that `validator_address` to whom you want delegate your tokens should be taken from our _white list_. To get this white list you need to query it from validators_set_contract. You can take it's address from core contract `config` query. In order to get validator set from given contract you need to query `validators` method.
 
 ##### To do IBC transfer to neutron:
 
