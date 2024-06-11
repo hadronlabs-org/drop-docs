@@ -351,6 +351,12 @@ const voucherWithdrawTxResult = await voucherContractClient.sendNft(
 
 ### LSM Share Bond
 
+LSM Shares are some kind of tickets taken from validator. For your delegaion validator gives you "tickets" in return that can be easily transferred among other accounts. By these tickets, you can literally "send" your delegation to another person.
+
+If you already have ceratain amount of money staked to validator, you can tokenize your shares, bridge them to Neutron and "give your delegation" to Drop instance and get dAsset in return.
+
+Important caveat here is that every tokenized share is different denom. It means that you always operate with different denoms and it literally makes impossible to create exchange pool to swap your "delegation" to another token (technically it's possible but inconvenient for you to always hold many different denoms for these swaps). To facilitate the effort, you can get "one single" dAsset managed by Drop protocol. You can bond different denoms and get back one single denom in order to hold "one big delegation in 1 denom" that can be easily swapped back to origin denom. To turn your staking to dAsset manually, folow these steps:
+
 ##### To create tokenized share:
 
 ```json
