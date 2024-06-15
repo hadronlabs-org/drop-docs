@@ -1,5 +1,5 @@
 # Validator FAQ
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/d75bc1b4-7b04-41f4-8591-52e49141d320)
+![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/d55807a5-bcd5-4eda-afac-8c4485e8568d)
 
 **How to signup to be notified of the next onboarding wave?**
 
