@@ -37,9 +37,6 @@ The Drop DAO may implement scaling delegations that dynamically adjust based on 
 
 Achieving practical decentralization involves mitigating off-chain single points of failure, such as geography, jurisdiction, and ISP choice, to enhance network resilience.
 
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/36f2e310-b9b9-4056-b8d8-444a3579f261)
-*Visual representation of the voting power shares of Cosmos Hub validators on June 15th, 2024 by Smartstake.*
-
 ### Weighted Delegations
 
 To incentivize validators to contribute to the network's decentralization and resilience, the Drop DAO may implement a weighted delegation system. Such a system would allocate a higher share of delegations to validators who enhance network diversity and resilience, while those who do not would receive a smaller share.
