@@ -1,6 +1,7 @@
 # Future directions
 
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/be2f8922-af45-4ad0-83ce-4dcdc303e2bc)
+![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/f3478368-903f-4c63-a26e-780b9dd6ac3d)
+
 
 Post-launch, the Drop DAO will continue to evolve and enhance its validator set management policy. The directions outlined below detail the proposed areas of focus for the protocol's development, aimed at improving decentralization, performance, and governance participation within CometBFT blockchains.
 
