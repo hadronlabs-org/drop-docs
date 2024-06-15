@@ -1,4 +1,5 @@
 # Overview
+![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/3727d7f5-1e0d-4f70-91ac-f7ad9cf6d092)
 
 This section provides an in-depth overview of the Drop protocol's approach to validator set management and decentralization. 
 
