@@ -36,6 +36,9 @@ The Drop DAO may implement scaling delegations that dynamically adjust based on 
 ## Introduce Weighted Delegations to Sponsor Decentralization and Governance Participation
 
 Achieving practical decentralization involves mitigating off-chain single points of failure, such as geography, jurisdiction, and ISP choice, to enhance network resilience.
+![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/e023ff31-0569-41cf-9387-01efe886cf45)
+*A decentralization dashboard maintained by [Observatory.zone](http://Observatory.zone)*
+
 
 ### Weighted Delegations
 
