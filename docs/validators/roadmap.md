@@ -1,6 +1,6 @@
 # Future directions
 
----
+![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/be2f8922-af45-4ad0-83ce-4dcdc303e2bc)
 
 Post-launch, the Drop DAO will continue to evolve and enhance its validator set management policy. The directions outlined below detail the proposed areas of focus for the protocol's development, aimed at improving decentralization, performance, and governance participation within CometBFT blockchains.
 
@@ -37,9 +37,8 @@ The Drop DAO may implement scaling delegations that dynamically adjust based on 
 
 Achieving practical decentralization involves mitigating off-chain single points of failure, such as geography, jurisdiction, and ISP choice, to enhance network resilience.
 
-![A decentralization dashboard maintained by [Observatory.zone](http://Observatory.zone) ](Become%20a%20Drop%20Validator%20a73db14eccbe4036b0b98436bc8e8cad/Screen_Shot_2024-04-25_at_22.23.31.png)
-
-A decentralization dashboard maintained by [Observatory.zone](http://Observatory.zone) 
+![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/36f2e310-b9b9-4056-b8d8-444a3579f261)
+*Visual representation of the voting power shares of Cosmos Hub validators on June 15th, 2024 by Smartstake.*
 
 ### Weighted Delegations
 
@@ -51,8 +50,9 @@ The Drop DAO may develop scorecards in collaboration with network communities an
 
 ### Example Scorecard
 
-| Stake | Validator has been in the active set for 3 months and is in the bottom 33% of voting power rank. | Validator is among the bottom 52% of voting power. | Validator is among the top 48% of voting power. |
+| Stake | Preferred | Baseline | Discouraged |
 | --- | --- | --- | --- |
+| Stake | Validator has been in the active set for 3 months and is in the bottom 33% of voting power rank. | Validator is among the bottom 52% of voting power. | Validator is among the top 48% of voting power. |
 | Governance Participation | Validator has voted on > 80% of governance polls (excluding spam proposals) over the last 90 days (including “Abstain” votes). | Validator has voted on > 50% of governance polls (excluding spam proposals) over the last 90 days (including “Abstain” votes). | Validator has voted on < 50% of governance polls (excluding spam proposals) over the last 90 days (including “Abstain” votes). |
 | Geography | Operations are in a location and jurisdiction not represented in the set. | Operations are in a location and jurisdiction underrepresented in the set. | Operations are in a location and jurisdiction overrepresented in the set. |
 | Infrastructure | Operator relies on bare-metal infrastructure. | Operator relies on underrepresented ISPs. | Operator relies on overrepresented ISPs. |
