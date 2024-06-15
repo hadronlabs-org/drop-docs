@@ -26,10 +26,8 @@ Validators operated by or affiliated with Centralized Exchanges or Custodian ser
 
 ### 2. Apply to join the **Allow List** during an Onboarding Wave
 
-<aside>
-💡 As part of the onboarding process, Drop may request information considered sensitive by your organization. Please only share what you are able to, and note that any information shared in this process will be kept confidential by Drop.
-
-</aside>
+> 💡 As part of the onboarding process, Drop may request information considered sensitive by your organization.
+> Please only share what you are able to, and note that any information shared in this process will be kept confidential by Drop.
 
 Drop’s first onboarding wave will open on `June 17th` and close on `June 28th` 2024 at midnight UTC. To apply, validators must simply submit a complete and faithful application via the following form:
 
