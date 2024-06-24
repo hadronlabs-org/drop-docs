@@ -28,6 +28,17 @@ const sidebars = {
                     ],
                 },
                 {
+                    label: 'Validators',
+                    type: 'category',
+                    items: [
+                        'validators/overview',
+                        'validators/valset',
+                        'validators/onboard',
+                        'validators/roadmap',
+                        'validators/faq',
+                    ],
+                },
+                {
                     label: 'Deployments',
                     type: 'category',
                     items: [

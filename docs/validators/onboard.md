@@ -1,5 +1,5 @@
 # Receive delegations from Drop
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/b1fdd58e-408b-4d3d-96fd-c3f66f2cf50d)
+![image](/img/onboard_banner.png)
 
 To receive protocol delegations from Drop, validators must first onboard to the protocol’s **Allow List** by applying during an onboarding wave. Onboarding waves are conducted on an ad-hoc basis to balance validator sustainability with protocol decentralization.
 

@@ -1,9 +1,9 @@
 # Validator FAQ
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/d55807a5-bcd5-4eda-afac-8c4485e8568d)
+![image](/img/faq_banner.png)
 
 **How to signup to be notified of the next onboarding wave?**
 
-Currently, the easiest way to be notified of the next onboarding wave is to follow @Dropdotmoney on X. Enabling notifications can help ensure you don’t miss an announcement. 
+Currently, the easiest way to be notified of the next onboarding wave is to follow [@Dropdotmoney](https://x.com/dropdotmoney) on X. Enabling notifications can help ensure you don’t miss an announcement. 
 
 **How is stake distributed across validators?**
 

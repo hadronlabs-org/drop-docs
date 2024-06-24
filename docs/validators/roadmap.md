@@ -1,6 +1,6 @@
 # Future directions
 
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/f3478368-903f-4c63-a26e-780b9dd6ac3d)
+![image](/img/roadmap_banner.png)
 
 
 Post-launch, the Drop DAO will continue to evolve and enhance its validator set management policy. The directions outlined below detail the proposed areas of focus for the protocol's development, aimed at improving decentralization, performance, and governance participation within CometBFT blockchains.
@@ -37,7 +37,7 @@ The Drop DAO may implement scaling delegations that dynamically adjust based on 
 ## Introduce Weighted Delegations to Sponsor Decentralization and Governance Participation
 
 Achieving practical decentralization involves mitigating off-chain single points of failure, such as geography, jurisdiction, and ISP choice, to enhance network resilience.
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/e023ff31-0569-41cf-9387-01efe886cf45)
+![image](/img/decentralization_dashboard.png)
 *A decentralization dashboard maintained by [Observatory.zone](http://Observatory.zone)*
 
 

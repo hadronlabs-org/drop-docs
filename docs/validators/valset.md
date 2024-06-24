@@ -17,7 +17,7 @@ For the sake of illustration, here are the halt thresholds of notable CometBFT n
 
 However, the distribution of voting power itself is not the sole point of failure of a delegated proof-of-stake network. When nodes are concentrated within specific jurisdictions, datacenters or ISP companies, networks become increasingly vulnerable to failures and policy changes. For instance, as of June 2024, roughly 44% of Kyve’s nodes were running on Hetzner, and 75% of the voting power on dYdX was located in Japan. In these conditions, a ban on cryptocurrency or validator software by a region, country or even a company could harm, halt or even lead to the capture of the network. 
 
-![image](https://github.com/hadronlabs-org/drop-docs/assets/103267218/e43d8bdb-035d-43d9-99b3-1b0636ee8e35)
+![image](/img/voting_power.png)
 *Visual representation of the voting power shares of Cosmos Hub validators on June 15th, 2024 by [Smartstake](https://analytics.smartstake.io/cosmos/stats).*
 
 ## Why Is It This Way?
