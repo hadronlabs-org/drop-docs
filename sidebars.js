@@ -18,13 +18,24 @@ const sidebars = {
             label: 'Drop',
             type: 'category',
             items: [
-                'overview',
+                'introduction',
                 {
                     label: 'Integration',
                     type: 'category',
                     items: [
                         'integrations/overview',
                         'integrations/referral',
+                    ],
+                },
+                {
+                    label: 'Validators',
+                    type: 'category',
+                    items: [
+                        'validators/overview',
+                        'validators/valset',
+                        'validators/onboard',
+                        'validators/roadmap',
+                        'validators/faq',
                     ],
                 },
                 {
