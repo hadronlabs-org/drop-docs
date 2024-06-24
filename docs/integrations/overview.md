@@ -351,13 +351,17 @@ const voucherWithdrawTxResult = await voucherContractClient.sendNft(
 
 ### LSM Share Bond
 
-LSM Shares are some kind of tickets taken from validator. For your delegaion validator gives you "tickets" in return that can be easily transferred among other accounts. By these tickets, you can literally "send" your delegation to another person.
+> At the moment of writing, LSM is only available on Cosmos Hub.
 
-If you already have ceratain amount of money staked to validator, you can tokenize your shares, bridge them to Neutron and "give your delegation" to Drop instance and get dAsset in return.
+Liquidity Staking Module (LSM) allows users to transfer their staked assets from one address to another without unstaking them. To learn more about it, visit the repository: https://github.com/iqlusioninc/liquidity-staking-module.
 
-Important caveat here is that every tokenized share is different denom. It means that you always operate with different denoms and it literally makes impossible to create exchange pool to swap your "delegation" to another token (technically it's possible but inconvenient for you to always hold many different denoms for these swaps). To facilitate the effort, you can get "one single" dAsset managed by Drop protocol. You can bond different denoms and get back one single denom in order to hold "one big delegation in 1 denom" that can be easily swapped back to origin denom. To turn your staking to dAsset manually, folow these steps:
+To achieve that, LSM mints special tokens that represent staked assets ownership. One can "tokenize" their staked assets and by sending them transfer an ownership to other user or protocol. These tokens are called "LSM shares" for simplicity.
 
-##### To create tokenized share:
+Each LSM share is represented by a unique denom. It means that one can send a half of the share to someone but two different shares aren't fungible with each other.
+
+Drop can accept such shares and mint dASSET based on them. I.e., if one has already natively staked tokens (delegated to a validator), they can tokenize their shares, IBC transfer them to Neutron and "stake" with Drop the same way as ASSET itself.
+
+#### Message for tokenized share creation:
 
 ```json
 {
@@ -380,7 +384,7 @@ gaiad q staking delegations cosmos_delegator_address --node $THETA_TESTNET_NODE_
 
 Also, please notice, that `validator_address` to whom you want delegate your tokens should be taken from our _white list_. To get this white list you need to query it from validators_set_contract. You can take it's address from core contract `config` query. In order to get validator set from given contract you need to query `validators` method.
 
-##### To do IBC transfer to neutron:
+#### To do IBC transfer to neutron:
 
 ```json
 {
@@ -407,9 +411,9 @@ In order to reveal:
   Math.floor(Date.now() / 1000) * 1e9 + 10 * 60 * 1e9;
   ```
 
-##### To do stake share with drop:
+#### To do stake share with drop:
 
-Follow [this](#staking) instruction, where denom is your IBC-bridged to Neutron share.
+LSM share staking process is the very same as [ASSET staking](#staking), but the coin attached to the message is an LSM share IBC-transferred to Neutron.
 
 Example of using the TS client:
 
