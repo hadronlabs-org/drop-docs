@@ -18,7 +18,7 @@ const sidebars = {
             label: 'Drop',
             type: 'category',
             items: [
-                'overview',
+                'introduction',
                 {
                     label: 'Integration',
                     type: 'category',
