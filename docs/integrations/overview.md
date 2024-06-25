@@ -380,22 +380,24 @@ In order to reveal how many tokens you staked with validators from certain deleg
 
 Also, please notice, that `validator_address` to whom you want delegate your tokens should be taken from our _white list_. To get this white list you need to query it from validators_set_contract. You can take it's address from core contract `config` query. In order to get validator set from given contract you need to query `validators` method.
 
-#### To do IBC transfer to neutron:
+#### To do IBC transfer with further stake on neutron:
 
 ```json
 {
-  "@type": "/ibc.applications.transfer.v1.MsgTransfer",
-  "source_port": "transfer",
-  "source_channel": "channel-123",
-  "token": {
-    "denom": "cosmosvaloper1**************************************/123",
-    "amount": "1234"
-  },
-  "sender": "cosmos1_sender",
-  "receiver": "neutron1_receiver",
-  "timeout_height": "0",
-  "timeout_timestamp": "12345",
-  "memo": ""
+  "type": "cosmos-sdk/MsgTransfer",
+  "value": {
+    "memo": "{\"wasm\":{\"contract\":\"neutron15lp29w5vtntsgecwxp5qx0m7tka6km885pcls4e4ule6yz6dhvqstukrvu\",\"msg\":{\"bond\":{\"receiver\":\"neutron1vlw72wh7rvl2vg4w434a6h9mftsl5vfqzntwdh\"}}}}",
+    "receiver": "neutron1_receiver",
+    "sender": "cosmos1_sender",
+    "source_channel": "channel-123",
+    "source_port": "transfer",
+    "timeout_height": "0",
+    "timeout_timestamp": "12345678901234567890",
+    "token": {
+      "amount": "1234",
+      "denom": "cosmosvaloper1**************************************/123"
+    }
+  }
 }
 ```
 
