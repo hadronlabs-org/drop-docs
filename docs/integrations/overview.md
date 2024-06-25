@@ -386,8 +386,8 @@ Also, please notice, that `validator_address` to whom you want delegate your tok
 {
   "type": "cosmos-sdk/MsgTransfer",
   "value": {
-    "memo": "{\"wasm\":{\"contract\":\"neutron15lp29w5vtntsgecwxp5qx0m7tka6km885pcls4e4ule6yz6dhvqstukrvu\",\"msg\":{\"bond\":{\"receiver\":\"neutron1vlw72wh7rvl2vg4w434a6h9mftsl5vfqzntwdh\"}}}}",
-    "receiver": "neutron1_receiver",
+    "memo": "{\"wasm\":{\"contract\":\"neutron1_core_contract\",\"msg\":{\"bond\":{}}}}",
+    "receiver": "neutron1_core_contract",
     "sender": "cosmos1_sender",
     "source_channel": "channel-123",
     "source_port": "transfer",
