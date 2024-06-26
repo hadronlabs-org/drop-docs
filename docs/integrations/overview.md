@@ -378,7 +378,20 @@ Drop can accept such shares and mint dASSET based on them. I.e., if one has alre
 
 In order to reveal how many tokens you staked with validators from certain delegator use [this](https://cosmos-lcd.quickapi.com/swagger/#/Query/DelegatorDelegations) query.
 
-Also, please notice, that `validator_address` to whom you want delegate your tokens should be taken from our _white list_. To get this white list you need to query it from validators_set_contract. You can take it's address from core contract `config` query. In order to get validator set from given contract you need to query `validators` method.
+Also, please notice, that tokenized share can be staked with drop only if it was produced by validatator from our _white list_. To get this white list all you need:
+
+- Query core contract (".validators_set_contract" field)
+  ```json
+  {
+    "config": {}
+  }
+  ```
+- In order to get white list from validators_set_contract contract
+  ```json
+  {
+    "validators": {}
+  }
+  ```
 
 #### To do IBC transfer with further stake on neutron:
 
