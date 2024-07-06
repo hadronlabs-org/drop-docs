@@ -275,7 +275,7 @@ Staking with Drop is done by the following message to the `core` contract **with
 }
 ```
 
-For specifying the staking referral see [Referral program integration](integrations/referral)
+For specifying the staking referral see [Referral program integration](integrations/referral).
 
 Example of using the TS client:
 
@@ -293,6 +293,8 @@ const bondTxResult = await coreContractClient.bond(
   ]
 );
 ```
+
+Staking of LSM shares is done with the very same message. The only difference is the asset attached: instead of being native staking token, it should be LSM share IBC transferred to Neutron. For more details, see  [Onboarding from native staking](integrations/lsm_staking)
 
 ### Unstaking request
 
@@ -346,167 +348,5 @@ const voucherWithdrawTxResult = await voucherContractClient.sendNft(
       })
     ).toString("base64"),
   }
-);
-```
-
-### LSM Share Bond
-
-> At the moment of writing, LSM is only available on Cosmos Hub.
-
-Liquidity Staking Module (LSM) allows users to transfer their staked assets from one address to another without unstaking them. To learn more about it, visit the repository: https://github.com/iqlusioninc/liquidity-staking-module.
-
-To achieve that, LSM mints special tokens that represent staked assets ownership. One can "tokenize" their staked assets and by sending them transfer an ownership to other user or protocol. These tokens are called "LSM shares" for simplicity.
-
-Each LSM share is represented by a unique denom. It means that one can send a half of the share to someone but two different shares aren't fungible with each other.
-
-Drop can accept such shares and mint dASSET based on them. I.e., if one has already natively staked tokens (delegated to a validator), they can tokenize their shares, IBC transfer them to Neutron and "stake" with Drop the same way as ASSET itself.
-
-#### Message for tokenized share creation:
-
-```json
-{
-  "@type": "/cosmos.staking.v1beta1.MsgTokenizeShares",
-  "delegator_address": "cosmos_delegator_address",
-  "validator_address": "cosmosvaloper_validator_address_to_whom_you_staked",
-  "amount": {
-    "denom": "denom",
-    "amount": "1234"
-  },
-  "tokenized_share_owner": "cosmos_tokenized_share_owner"
-}
-```
-
-In order to reveal how many tokens you staked with validators from certain delegator use [this](https://cosmos-lcd.quickapi.com/swagger/#/Query/DelegatorDelegations) query.
-
-Also, please notice, that tokenized share can be staked with drop only if it was produced by validatator from our _white list_. To get this white list all you need:
-
-- Query core contract (".validators_set_contract" field)
-  ```json
-  {
-    "config": {}
-  }
-  ```
-- In order to get white list from validators_set_contract contract
-  ```json
-  {
-    "validators": {}
-  }
-  ```
-
-#### To do IBC transfer with further stake on neutron:
-
-```json
-{
-  "type": "cosmos-sdk/MsgTransfer",
-  "value": {
-    "memo": "{\"wasm\":{\"contract\":\"neutron1_core_contract\",\"msg\":{\"bond\":{}}}}",
-    "receiver": "neutron1_core_contract",
-    "sender": "cosmos1_sender",
-    "source_channel": "channel-123",
-    "source_port": "transfer",
-    "timeout_height": "0",
-    "timeout_timestamp": "12345678901234567890",
-    "token": {
-      "amount": "1234",
-      "denom": "cosmosvaloper1**************************************/123"
-    }
-  }
-}
-```
-
-In order to reveal:
-
-- `source_channel` you can use "relayers" [page](https://www.mintscan.io/cosmos/relayers) on mintscan
-- `timeout_timestamp` you can use this js snippet (timeout for 10mins will be enough):
-  ```js
-  Math.floor(Date.now() / 1000) * 1e9 + 10 * 60 * 1e9;
-  ```
-
-#### To do stake share with drop:
-
-LSM share staking process is the very same as [ASSET staking](#staking), but the coin attached to the message is an LSM share IBC-transferred to Neutron.
-
-Example of using the TS client:
-
-```tsx
-import { SigningStargateClient } from "@cosmjs/stargate";
-import { MsgTransfer } from "cosmjs-types/ibc/applications/transfer/v1/tx";
-import { AccountData, DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
-
-const NeutronMainWallet = await DirectSecp256k1HdWallet.fromMnemonic(MNEMONIC, {
-  prefix: "neutron",
-});
-
-const CosmosHubMainWallet = await DirectSecp256k1HdWallet.fromMnemonic(
-  MNEMONIC,
-  {
-    prefix: "cosmos",
-  }
-);
-
-const NeutronMainAccounts: readonly Array<AccountData> =
-  await NeutronMainWallet.getAccounts();
-
-const CosmosHubMainAccounts: readonly Array<AccountData> =
-  await CosmosHubMainWallet.getAccounts();
-
-const Cosmos_IBC_Sender = await SigningStargateClient.connectWithSigner(
-  NODE_ADDRESS,
-  CosmosHubMainWallet,
-  {
-    registry: new Registry(
-      new Map<string, GeneratedType>([
-        ["/ibc.applications.transfer.v1.MsgTransfer", MsgTransfer],
-      ])
-    ),
-  }
-);
-
-// Do IBC transfer here
-await Cosmos_IBC_Sender.signAndBroadcastSync(
-  CosmosHubMainAccounts[0].address,
-  [
-    {
-      typeUrl: "/ibc.applications.transfer.v1.MsgTransfer",
-      value: {
-        sourcePort: "transfer",
-        sourceChannel: "channel-3457",
-        token: {
-          denom: "cosmosvaloper1********************************/******",
-          amount: "1234",
-        },
-        sender: CosmosHubMainAccounts[0].address,
-        receiver: NeutronMainAccounts[0].address,
-        timeoutHeight: "0",
-        timeoutTimestamp: String(
-          Math.floor(Date.now() / 1000) * 1e9 + 10 * 60 * 1e9
-        ),
-      },
-    },
-  ],
-  {
-    gas: "400000",
-    amount: [
-      {
-        denom: "uatom",
-        amount: "4000",
-      },
-    ],
-  },
-  ""
-);
-
-// Execute `bond` with LSM shares
-const bondTxResult = await coreContractClient.bond(
-  neutronUserAddress,
-  {},
-  1.6,
-  undefined,
-  [
-    {
-      amount: "1234",
-      denom: "ibc/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    },
-  ]
 );
 ```
