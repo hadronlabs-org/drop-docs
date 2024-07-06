@@ -275,7 +275,7 @@ Staking with Drop is done by the following message to the `core` contract **with
 }
 ```
 
-For specifying the staking referral see [Referral program integration](integrations/referral).
+For specifying the staking referral see [Referral program integration](referral).
 
 Example of using the TS client:
 
@@ -294,7 +294,7 @@ const bondTxResult = await coreContractClient.bond(
 );
 ```
 
-Staking of LSM shares is done with the very same message. The only difference is the asset attached: instead of being native staking token, it should be LSM share IBC transferred to Neutron. For more details, see  [Onboarding from native staking](integrations/lsm_staking)
+Staking of LSM shares is done with the very same message. The only difference is the asset attached: instead of being native staking token, it should be LSM share IBC transferred to Neutron. For more details, see  [Onboarding from native staking](lsm_staking).
 
 ### Unstaking request
 
