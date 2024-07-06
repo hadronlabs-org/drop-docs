@@ -1,4 +1,4 @@
-# LSM Share Bond
+# Onboarding from native staking
 
 > At the moment of writing, LSM is only available on Cosmos Hub.
 
@@ -90,7 +90,7 @@ After one created a tokenized share on Cosmos Hub, it can be staked with Drop. A
 
 In order to reveal:
 
-- `source_channel` is the Cosmos Hub <> Neutron channel (you can use "relayers" [page](https://www.mintscan.io/cosmos/relayers) on Mintscan to get it)
+- `source_channel` is the Cosmos Hub-Neutron channel (you can use "relayers" [page](https://www.mintscan.io/cosmos/relayers) on Mintscan to get it)
 - `timeout_timestamp` is an IBC timeout. You can use 10 minutes by default and the following JavaScript snippet to calculate it:
   ```js
   Math.floor(Date.now() / 1000) * 1e9 + 10 * 60 * 1e9;
