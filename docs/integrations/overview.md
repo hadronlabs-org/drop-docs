@@ -5,6 +5,7 @@ Drop protocol can be integrated into external UI or DeFi on Neutron or any other
 ## Overview
 
 It is possible to integrate the Drop protocol in several ways:
+
 1. Use the auto-generated TypeScript client for smart contracts to interact with the Drop protocol.
 2. Craft the Drop messages manually and send them to Neutron chain or other supported chains to stake from it using the ibc-hooks or Skip API.
 3. (WIP) Use the Drop protocol through the Skip API.
@@ -12,11 +13,13 @@ It is possible to integrate the Drop protocol in several ways:
 Integration with Drop generally consists of 3 actions and several queries.
 
 Actions are:
+
 - staking
 - unstaking request
 - unstaking withdrawal
 
 Queries are:
+
 - instance contracts discovery
 - dASSET denom
 - dASSET balance
@@ -42,6 +45,7 @@ For example, ATOM staking can be done in a single IBC-transfer that calls Drop c
 > It means that after staking with Drop, the user have to do the next action with LST from Neutron chain.
 
 To simplify the work one still can use SkipAPI. The process is as follows:
+
 - https://api-docs.skip.money/reference/getassets endpoint allows getting proper denom of a specific asset on a specific chain
 - https://api-docs.skip.money/reference/getroutev2 endpoint allows building a proper route to transfer an asset to Neutron
 - https://api-docs.skip.money/reference/getmsgsv2 endpoint allows building a message to be issued on the target chain to stake assets with Drop. To do that, one should specify the contract address and message needed in the `post_route_handler` section (`COSMWASMCONTRACTMSGWRAPPER`).
@@ -146,6 +150,7 @@ Instead of manually guiding SkipAPI on how to handle the ASSET (e.g., send to Ne
 ### Instance contracts discovery
 
 The `factory` contract returns all the other smart contract for a specific instance with the following query:
+
 ```json
 {
   "state": {}
@@ -153,6 +158,7 @@ The `factory` contract returns all the other smart contract for a specific insta
 ```
 
 Query result example:
+
 ```json
 {
   "core_contract": "neutron1elxhch2kul3qk2whxawtfwe0l2ma0snec3fe6j4zp2wftwrhs33q2yzqwy",
@@ -171,22 +177,19 @@ Query result example:
 Getting contracts with the TS client:
 
 ```tsx
-const wallet = await DirectSecp256k1HdWallet.fromMnemonic(
-    "Mnemonic",
-    {
-        prefix: 'neutron',
-    },
-);
+const wallet = await DirectSecp256k1HdWallet.fromMnemonic("Mnemonic", {
+  prefix: "neutron",
+});
 const client = await SigningCosmWasmClient.connectWithSigner(
-    "https://rpc-palvus.pion-1.ntrn.tech:443",
-    wallet,
-    {
-        gasPrice: GasPrice.fromString('0.025untrn'),
-    },
+  "https://rpc-palvus.pion-1.ntrn.tech:443",
+  wallet,
+  {
+    gasPrice: GasPrice.fromString("0.025untrn"),
+  }
 );
 const factoryContractClient = new DropFactory.Client(
-    client,
-    "neutron15lp29w5vtntsgecwxp5qx0m7tka6km885pcls4e4ule6yz6dhvqstukrvu",
+  client,
+  "neutron15lp29w5vtntsgecwxp5qx0m7tka6km885pcls4e4ule6yz6dhvqstukrvu"
 );
 const res = await factoryContractClient.queryState();
 console.log(res);
@@ -195,6 +198,7 @@ console.log(res);
 ### dASSET denom
 
 The denom is stored in the `token` contract's config which can be obtained with the following query:
+
 ```json
 {
   "config": {}
@@ -202,6 +206,7 @@ The denom is stored in the `token` contract's config which can be obtained with 
 ```
 
 Query result example:
+
 ```json
 {
   "core_address": "neutron1elxhch2kul3qk2whxawtfwe0l2ma0snec3fe6j4zp2wftwrhs33q2yzqwy",
@@ -228,10 +233,9 @@ Exchange rate is queried from the `core` contract with the following query:
 The output is a float number represented as a **string**.
 
 Example of using the client code:
+
 ```tsx
-const exchangeRate = parseFloat(
-    await coreContractClient.queryExchangeRate(),
-);
+const exchangeRate = parseFloat(await coreContractClient.queryExchangeRate());
 ```
 
 ### Withdrawal NFT info
@@ -243,7 +247,7 @@ Here's the example on how to get the withdrawal NFT info from via generated clie
 
 ```tsx
 const vouchers = await withdrawalVoucherContractClient.queryTokens({
-    owner: neutronUserAddress,
+  owner: neutronUserAddress,
 });
 ```
 
@@ -271,28 +275,31 @@ Staking with Drop is done by the following message to the `core` contract **with
 }
 ```
 
-For specifying the staking referral see [Referral program integration](integrations/referral)
+For specifying the staking referral see [Referral program integration](referral).
 
 Example of using the TS client:
 
 ```tsx
 const bondTxResult = await coreContractClient.bond(
-    neutronUserAddress,
-    {},
-    1.6,
-    undefined,
-    [
-        {
-            amount: '500000',
-            denom: neutronIBCDenom,
-        },
-    ],
+  neutronUserAddress,
+  {},
+  1.6,
+  undefined,
+  [
+    {
+      amount: "500000",
+      denom: neutronIBCDenom,
+    },
+  ]
 );
 ```
+
+Staking of LSM shares is done with the very same message. The only difference is the asset attached: instead of being native staking token, it should be LSM share IBC transferred to Neutron. For more details, see  [Onboarding from native staking](lsm_staking).
 
 ### Unstaking request
 
 To make an unstaking request, user should send the dASSET to the core contract with the following message:
+
 ```json
 {
   "unbond": {}
@@ -303,15 +310,15 @@ Example of using the TS client:
 
 ```tsx
 let unBondTxResult = await coreContractClient.unbond(
-    neutronUserAddress,
-    1.6,
-    undefined,
-    [
-        {
-            amount: Math.floor(200_000 / exchangeRate).toString(),
-            denom: "token_factory_denom",
-        },
-    ],
+  neutronUserAddress,
+  1.6,
+  undefined,
+  [
+    {
+      amount: Math.floor(200_000 / exchangeRate).toString(),
+      denom: "token_factory_denom",
+    },
+  ]
 );
 ```
 
@@ -320,23 +327,26 @@ After that, user receives a withdrawal voucher that they can use to withdraw the
 ### Withdrawal
 
 Withdrawal of the ASSET implies sending the NFT to `withdrawal_manager` with the following message attached:
+
 ```json
 {
-    "withdraw": {}
+  "withdraw": {}
 }
 ```
 
 Example of using the TS client:
 
 ```tsx
-const voucherWithdrawTxResult = await voucherContractClient.sendNft(neutronUserAddress,
-    {
-        token_id: tokenId,
-        contract: withdrawalManagerContractAddress,
-        msg: Buffer.from(
-            JSON.stringify({
-                withdraw: {},
-            }),
-        ).toString('base64'),
-    });
+const voucherWithdrawTxResult = await voucherContractClient.sendNft(
+  neutronUserAddress,
+  {
+    token_id: tokenId,
+    contract: withdrawalManagerContractAddress,
+    msg: Buffer.from(
+      JSON.stringify({
+        withdraw: {},
+      })
+    ).toString("base64"),
+  }
+);
 ```
