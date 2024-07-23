@@ -8,7 +8,7 @@ Doing that is as easy as specifying the referral address in the staking message:
 {
   "bond": {
     "receiver": "neutron1receiveraddress",
-    "ref": "neutron1referraladdress"
+    "ref": "neutron1referreraddress"
   }
 }
 ```
