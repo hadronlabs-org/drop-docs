@@ -18,6 +18,7 @@ Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
 | `strategy_contract`           | `neutron1rs7g9005me78r0qyzyc5el9qdyv4fs9r8audr876jl7x5r3hs07s00wmqy` |
 | `token_contract`              | `neutron16l0qfrrahy5mve5x9nnw6zs9vv30k7rk55h6aaypq88ljwg57uxsxcg6y6` |
 | `validators_set_contract`     | `neutron1sq7a7kjyla0lyfdv44hct2kgf7efnw4g4flvzl9zf3exypwzuynqq28sgt` |
+| `unbonding_pump_contract`     | `neutron1vmv7swhz3q25t2qa58wtrqkkn9nreke9u9h70azl6wlcq0pr5utqyplrqk` |
 | `withdrawal_manager_contract` | `neutron1mlq0v5rqv03dvrl3vlsgffzsq7m84m3ffv4yqf3tez69w930x9dszeddlx` |
 | `withdrawal_voucher_contract` | `neutron1zcnkcdqs76zfcuewtskjnappumqk84nf2vrw5hctf8fqsgcs27mqkpnapq` |
 
@@ -27,3 +28,11 @@ Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
 |---------|-----------------------------------------------------------------------------------|
 | `ATOM`  | `ibc/9DF365E2C0EF4EA02FA771F638BB9C0C830EFCD354629BDC017F79B348B4E989`            |
 | `dATOM` | `factory/neutron16l0qfrrahy5mve5x9nnw6zs9vv30k7rk55h6aaypq88ljwg57uxsxcg6y6/udatom` |
+
+### ICA addresses
+
+| Contract                      | Address                                                              |
+|-------------------------------|----------------------------------------------------------------------|
+| `puppeteer_contract`          | `cosmos1r0ts4l7c26jrhx8ev403ylqrfk0j7z0jath52wh6t59a4drxj50qgqtlg4`  |
+| `unbonding_pump_contract`     | `cosmos1xfjwzvw9mv33atelre5vuhv7w48yg7nvyqwl2cf9zfjpkktmevgs7ks0a0`  |
+| `rewards_pump_contract`       | `cosmos1vkngfztggkzxzwrer005n96r0f2saa3xruqfkay9z93tnp76d0ksa5m0zg`  |
