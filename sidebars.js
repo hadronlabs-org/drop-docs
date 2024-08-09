@@ -13,42 +13,44 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-    docs: [
+  docs: [
+    {
+      label: "Drop",
+      type: "category",
+      items: [
+        "introduction",
         {
-            label: 'Drop',
-            type: 'category',
-            items: [
-                'introduction',
-                {
-                    label: 'Integration',
-                    type: 'category',
-                    items: [
-                        'integrations/overview',
-                        'integrations/referral',
-                        'integrations/lsm_staking',
-                    ],
-                },
-                {
-                    label: 'Validators',
-                    type: 'category',
-                    items: [
-                        'validators/overview',
-                        'validators/valset',
-                        'validators/onboard',
-                        'validators/roadmap',
-                        'validators/faq',
-                    ],
-                },
-                {
-                    label: 'Deployments',
-                    type: 'category',
-                    items: [
-                        'deployments/testnet',
-                    ],
-                }
-            ]
-        }
-    ]
+          label: "Integration",
+          type: "category",
+          items: [
+            "integrations/overview",
+            "integrations/referral",
+            "integrations/lsm_staking",
+          ],
+        },
+        {
+          label: "Validators",
+          type: "category",
+          items: [
+            "validators/overview",
+            "validators/valset",
+            "validators/onboard",
+            "validators/roadmap",
+            "validators/faq",
+          ],
+        },
+        {
+          label: "Deployments",
+          type: "category",
+          items: [
+            "deployments/overview",
+            "deployments/mainnet",
+            "deployments/testnet",
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 module.exports = sidebars;
