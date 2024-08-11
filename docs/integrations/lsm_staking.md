@@ -1,20 +1,19 @@
-# Onboarding from native staking
+# Liquidity Staking Module
 
-> At the moment of writing, LSM is only available on Cosmos Hub.
+> At the moment of writing, the LSM is only available on Cosmos Hub.
 
-Liquidity Staking Module (LSM) allows users to transfer their staked assets from one address to another without unstaking them. 
+Liquidity Staking Module (LSM) allows users to transfer their staked assets from one address to another without unstaking them and waiting the entire unbonding period.
 To learn more about it, visit the repository: https://github.com/iqlusioninc/liquidity-staking-module.
 
-To achieve that, LSM mints special tokens that represent staked assets ownership. 
-One can "tokenize" their staked assets and by sending them transfer an ownership to other user or protocol. 
-These tokens are called "LSM shares" below for simplicity.
+To achieve that, the LSM mints special tokens that represent staked asset ownership. 
+One can "tokenize" their staked assets, and by sending them, transfer ownership to another user or protocol. 
+These tokens are called _LSM shares_ below for simplicity.
 
 Each LSM share is represented by a unique denom. 
-It means that one can send a half of the share to someone but two different shares aren't fungible with each other.
+This means that one can send a partial share to someone but two different shares aren't fungible with each other.
 
-Drop can accept such shares and mint dASSET based on them. 
-I.e., if one has already natively staked tokens (delegated to a validator), they can tokenize their shares, IBC transfer them to Neutron and "stake" with Drop the same way as ASSET itself. 
-Under the hood it means that the ownership over those staked assets is transferred to Drop protocol and user gets respective amount of dASSET in exchange.
+Drop can accept such shares and mint dAssets based on them (i.e., if one has traditionally staked tokens delegated to a validator, they can tokenize their shares via the LSM, IBC transfer them to Neutron, and liquid stake with Drop to receive dAssets). 
+Under the hood, this means that the ownership of those staked assets is transferred to Drop Protocol and the user gets their respective amount of dAssets in exchange.
 
 ## Tokenized share creation
 
@@ -36,12 +35,11 @@ The first action described here is a general tokenized creation. An example of t
 Where:
 
 - `cosmos_delegator_address` is an address of the user that currently has staked assets
-- `validator_address` is the address of validator assets are delegated to
-- `tokenized_share_owner` is the address which will be getting rewards. 
-Regardless of the current owner of tokenized share tokens, the rewards will be distributed to the address specified here. 
-It's useful for example when assets are IBC transferred and previous owner still gets rewards instead of IBC module.
+- `validator_address` is the address of the validator the user’s assets are delegated to
+- `tokenized_share_owner` is the address which will be getting rewards.
+Regardless of the current owner of tokenized share tokens, the rewards will be distributed to the address specified here.
 
-In order to reveal how many tokens the user have staked use [this](https://cosmos-lcd.quickapi.com/swagger/#/Query/DelegatorDelegations) query.
+In order to reveal how many tokens a user has staked, use [this](https://cosmos-lcd.quickapi.com/swagger/#/Query/DelegatorDelegations) query.
 
 Once the operation above is performed, a new denom is created and the user gets new minted tokens that represent staked tokens. 
 The denom has the following structure: `cosmosvaloper1**************************************/123`, so it consists of the validator address and an index of this LSM share. 
