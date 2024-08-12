@@ -18,7 +18,7 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
 | `strategy_contract`           | `neutron1fsk7se2mmg32m62z2gcaf0c5k85qkqv2k6k6r66kfj9nj9xfdyts38u2fv` | 9DCD683DF7EEBC05AD50B46298CC1A33C2827A5AC6A0617FE7E63AD1B50D874F |
 | `token_contract`              | `neutron1k6hr0f83e7un2wjf29cspk7j69jrnskk65k3ek2nj9dztrlzpj6q00rtsa` | 20367209D9155F3F97CAE02288DDCD79F9BBE47D74334D7F291DDCA6F5260570 |
 | `validators_set_contract`     | `neutron1vsg7uaxlqwrh04445ajjxkz0fn4cwd6dplmd9n9hmqrvr3ke9ddq5c54ca` | 476173A4F60C598DFB7332D9EF60D773775354AFD744DD9380E28855B35F582F |
-| `unbonding_pump_contract`     | `neutron1e8x80ytpu5dxghsh4jx5d96dyulvvmfjk0da0flurtfwgq37d8ws7a9du4` | BD5E764A14C4E287EBE179228DE01D09D1228E67525220EA1CECE6FF15BF8155 |
+| `unbonding_pump_contract`     | `neutron1g80pqyddnej6hp0szl6an98zudtkmr08mhhm2g33dj2ut6dzlkts4fzl87` | BD5E764A14C4E287EBE179228DE01D09D1228E67525220EA1CECE6FF15BF8155 |
 | `withdrawal_manager_contract` | `neutron1gcklauurx4ckyp0t8a6axl0500vy3n09y5utpspjg8ruxnln8erq2uumck` | 35F6F4B9E2C2B9326D15F0CFC1A1056C7D4E4B08B02D80DAADFD0D473A4E9E5E |
 | `withdrawal_voucher_contract` | `neutron1f4c2l9u8yekp99mexyhf7wxgrq3gjtuzgrqe90xaq75v7quulptqzef6up` | C4C18236B69F155A0D3D5EAF917FC0A7298B9D8AD25AA69AF997E82D2C6CDDEF |
 | `splitter_contract`           | `neutron1sy2ku4gyk6mag5lsxp9y5a5lsalc85mz5vzl6dkzpkmzpvdd3usqc8e7qw` | D9F208D338C67F79099536FC9A9E8A7D13723ECB32552713C0ADEA3893194B68 |
