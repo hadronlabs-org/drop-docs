@@ -20,44 +20,37 @@ const sidebars = {
       items: [
         "introduction",
         {
-          label: "Drop",
+          label: "About",
+          type: "category",
+          items: ["about/alliance", "about/droplets"],
+        },
+        {
+          label: "For Partners",
           type: "category",
           items: [
-            "introduction",
-            {
-              label: "About",
-              type: "category",
-              items: ["about/alliance", "about/droplets"],
-            },
-            {
-              label: "For Partners",
-              type: "category",
-              items: [
-                "integrations/overview",
-                "integrations/referral",
-                "integrations/lsm_staking",
-              ],
-            },
-            {
-              label: "Validators",
-              type: "category",
-              items: [
-                "validators/overview",
-                "validators/valset",
-                "validators/onboard",
-                "validators/roadmap",
-                "validators/faq",
-              ],
-            },
-            {
-              label: "Deployments",
-              type: "category",
-              items: [
-                "deployments/overview",
-                "deployments/mainnet",
-                "deployments/testnet",
-              ],
-            },
+            "integrations/overview",
+            "integrations/referral",
+            "integrations/lsm_staking",
+          ],
+        },
+        {
+          label: "Validators",
+          type: "category",
+          items: [
+            "validators/overview",
+            "validators/valset",
+            "validators/onboard",
+            "validators/roadmap",
+            "validators/faq",
+          ],
+        },
+        {
+          label: "Deployments",
+          type: "category",
+          items: [
+            "deployments/overview",
+            "deployments/mainnet",
+            "deployments/testnet",
           ],
         },
       ],
