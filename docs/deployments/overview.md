@@ -13,12 +13,12 @@ To ensure the integrity and security of contracts uploaded to the network, it is
 
 ### Building
 
-The contracts were built using the git tag `v1.0`.
+The contracts were built using the git tag `v1.0.0`.
 
 To build the drop protocol contracts, simply clone the contracts repository and run `make build`:
 
 ```
-$ git clone --branch v1.0 https://github.com/hadronlabs-org/drop-contracts.git
+$ git clone --branch v1.0.0 https://github.com/hadronlabs-org/drop-contracts.git
 .....
 $ cd drop-contracts
 .....
