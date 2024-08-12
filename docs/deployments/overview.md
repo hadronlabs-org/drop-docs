@@ -4,7 +4,34 @@
 
 To ensure the integrity and security of contracts uploaded to the network, it is necessary to verify the SHA256 checksums of both the local binary file of the contract and the contract deployed on the network. This document outlines the steps for performing this verification.
 
+## Bulding Drop
+
+### Requirements
+
+- Git
+- Rust > 1.78
+
+### Building
+
+The contracts were built using the git commit hash `b1f986c9b7a45ab9dc21ee7c86e48bbf31fdc928`.
+
+To build the drop protocol contracts, simply clone the contracts repository and run `make build`:
+
+```
+$ git clone https://github.com/hadronlabs-org/drop-contracts.git
+.....
+$ cd drop-contracts
+.....
+$ git checkout b1f986c9b7a45ab9dc21ee7c86e48bbf31fdc928
+.....
+$ make build
+```
+
+After the build completes, all contracts will be located in the `artifacts` directory.
+
 ## Tools
+
+### CLI
 
 1. **Command to obtain the checksum of the file:**
 
@@ -25,6 +52,10 @@ To ensure the integrity and security of contracts uploaded to the network, it is
    ```
 
 In the obtained output, the checksum is contained in the `data_hash` field.
+
+### Celatone
+
+Or you can use [Celatone](https://neutron.celat.one/neutron-1). Search for contract using its address, and on the "Contract Information" click on contract's code id in the "From Code" field. But the most reliable way to get all required contract information is to use CLI with right RPC node.
 
 ## Example Procedure
 
@@ -50,9 +81,4 @@ In the obtained output, the checksum is contained in the `data_hash` field.
 
 ## Contracts and Their Checksums
 
-The contracts were built using the git commit hash `b1f986c9b7a45ab9dc21ee7c86e48bbf31fdc928`.
 You can find contracts checksums, code id and addresses on the next two pages: [testnet](./testnet.md) and [mainnet](./mainnet.md).
-
-## Conclusion
-
-Verifying the SHA256 checksum of the local binary contract file and the deployed contract on the network is an important step to ensure the integrity and security of contracts. Follow the provided instructions and use the table to keep track of the checksums and code-ids of your contracts.
