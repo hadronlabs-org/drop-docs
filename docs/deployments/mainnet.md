@@ -6,10 +6,12 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
 
 ### Contracts
 
+> Version: 1.0.1
+
 | Contract                      | Address                                                              | Checksum                                                         |
 | ----------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | `factory`                     | `neutron1rtydk5vlppj2nmw98ctpgee6hxe5va7mc9x3lng8xm75p3dus80s7pkvmu` | 82DD53F3E448E9A142F0F4FFD802C266AD6B2803C0A614E91EDBE38EFE5B6B31 |
-| `core_contract`               | `neutron16m3hjh7l04kap086jgwthduma0r5l0wh8kc6kaqk92ge9n5aqvys9q6lxr` | 19E555870765ADB32DC51E0BD25398B561CC459B68CC2E0EECC6C4B943167169 |
+| `core_contract`               | `neutron16m3hjh7l04kap086jgwthduma0r5l0wh8kc6kaqk92ge9n5aqvys9q6lxr` | 4994f1b4b2201dbaf45691a384e9a1445e076809fe38ac793c36f9e048903927 |
 | `distribution_contract`       | `neutron1dj0l8w0v4w6c8xshyeqhxx740nkc0p2x0e37cdsynsr49zvd2v8qze22va` | E1D8891A9967EADA49DB7433FB86E2BBB3BADBDD5746D444CEA402BBDECA0180 |
 | `puppeteer_contract`          | `neutron15v5acjfttf3umzatmj7rqfjy6yzcgekh266ehjsxclvaem0hpd7q9qpscr` | D4E62CB36C3E8D2C70B5C7B77A088A1635969C14D7A0FAF099206415A70D1739 |
 | `rewards_manager_contract`    | `neutron1ydg7c33j0de7np2nk8gf4qwr8gvmmngjan2ymdtthzpwu22zajwqd234gt` | 3866E7302D1E8BB5415AFFB949697309386925EB181BDB437DF89CDCBC28F536 |
