@@ -22,6 +22,7 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
 | `withdrawal_manager_contract` | `neutron1gcklauurx4ckyp0t8a6axl0500vy3n09y5utpspjg8ruxnln8erq2uumck` | 35F6F4B9E2C2B9326D15F0CFC1A1056C7D4E4B08B02D80DAADFD0D473A4E9E5E |
 | `withdrawal_voucher_contract` | `neutron1f4c2l9u8yekp99mexyhf7wxgrq3gjtuzgrqe90xaq75v7quulptqzef6up` | C4C18236B69F155A0D3D5EAF917FC0A7298B9D8AD25AA69AF997E82D2C6CDDEF |
 | `splitter_contract`           | `neutron1sy2ku4gyk6mag5lsxp9y5a5lsalc85mz5vzl6dkzpkmzpvdd3usqc8e7qw` | D9F208D338C67F79099536FC9A9E8A7D13723ECB32552713C0ADEA3893194B68 |
+| `redemption_rate_adapter`     | `neutron133r4wfczhq6xec35s859sxpy2h2le3xc9g6u388chhaaldhtp7cqus6yju` | F6A231A1969CBA69040572C1CB540735C87BE912211E65C81C0B816622BE0288 |
 
 ### Denoms
 
