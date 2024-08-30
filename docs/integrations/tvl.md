@@ -5,7 +5,7 @@ Total Value Locked (TVL) - Total amount of locked tokens in Drop Protocol.
 Steps to get current TVL:
 
 - Go to [celat.one](https://neutron.celat.one/neutron-1/) page, search for the core contract of your instance
-  - [Examle](https://neutron.celat.one/neutron-1/contracts/neutron1mla0gsxwueanhqnq8hknagxcqujr3zjnhll9ut9dma7pvc3yl9mse254ql)
+  - [Example](https://neutron.celat.one/neutron-1/contracts/neutron1mla0gsxwueanhqnq8hknagxcqujr3zjnhll9ut9dma7pvc3yl9mse254ql)
 - Query config and go to puppeteer contract
   - [Example](https://neutron.celat.one/neutron-1/interact-contract?selectedType=query&contract=neutron1mla0gsxwueanhqnq8hknagxcqujr3zjnhll9ut9dma7pvc3yl9mse254ql&msg=ewogICJjb25maWciOiB7fQp9)
 - Query `extension` message to get all current delegations
