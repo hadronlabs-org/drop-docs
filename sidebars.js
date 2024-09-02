@@ -31,6 +31,7 @@ const sidebars = {
             "integrations/overview",
             "integrations/referral",
             "integrations/lsm_staking",
+            "integrations/tvl",
           ],
         },
         {
