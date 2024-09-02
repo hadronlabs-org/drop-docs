@@ -1,6 +1,6 @@
-# Referral program integration
+# Referral Program
 
-Apps integrating Drop protocol can be interested in either Droplets program or Revenue share program.
+Apps integrating Drop may be interested in either the Droplets Program or Revenue Share Program.
 
 Doing that is as easy as specifying the referral address in the staking message:
 
@@ -13,4 +13,4 @@ Doing that is as easy as specifying the referral address in the staking message:
 }
 ```
 
-Staking messages containing referral address will be processed according to the program address participates in. 
+Staking messages containing a referral address will be processed according to the program address participates in. 

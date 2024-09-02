@@ -20,7 +20,12 @@ const sidebars = {
       items: [
         "introduction",
         {
-          label: "Integration",
+          label: "About",
+          type: "category",
+          items: ["about/alliance", "about/droplets"],
+        },
+        {
+          label: "For Partners",
           type: "category",
           items: [
             "integrations/overview",
@@ -43,7 +48,11 @@ const sidebars = {
         {
           label: "Deployments",
           type: "category",
-          items: ["deployments/testnet"],
+          items: [
+            "deployments/overview",
+            "deployments/mainnet",
+            "deployments/testnet",
+          ],
         },
       ],
     },

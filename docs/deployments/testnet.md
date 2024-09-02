@@ -2,28 +2,37 @@
 
 ## Cosmos Hub Instance
 
-Current Cosmos Hub Drop testnet instance uses `provider` testnet. 
-It's to be replaced with actual Cosmos Hub testnet shortly.
+Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet. 
 
 ### Contracts
 
 | Contract                      | Address                                                              |
 |-------------------------------|----------------------------------------------------------------------|
-| `factory`                     | `neutron13w6n6kj5pz59chgmeq63xeuy5y8shd2h9hkm2tvy5a35ugnuzzlsltznae` |
-| `core_contract`               | `neutron1elxhch2kul3qk2whxawtfwe0l2ma0snec3fe6j4zp2wftwrhs33q2yzqwy` |
-| `distribution_contract`       | `neutron1jnre6ef6mlcyfqsu8e9a2wf27farphsrgezlv0n8ezl9vfzdc7vqkmtvpm` |
-| `puppeteer_contract`          | `neutron1zvk70rw9xk5nvkw3c8ms62n5v9t6zpayfkygn8m5pgwyrqzsjsaq2upegw` |
-| `rewards_manager_contract`    | `neutron1t0spq2jeef7jvvydlaz4jxga37skrnqk0uuxa5d7nqcrjtnk79lsnfygj3` |
-| `staker_contract`             | `neutron1qcz9uw5g3vwqmz7qcsmcua3vzps6amrsqrmf7r84xfe76g3ztsrqm82sfy` |
-| `strategy_contract`           | `neutron1sjeppcavzvect0e5654tl4w06pp9sdx2pmxqy8m4jwv58jlwwv8quv86yy` |
-| `token_contract`              | `neutron1wgtjgeprg53wthczzlzpg0vrytuvfl9j59lpf87qd3mtj2dq6xysxvwcxd` |
-| `validators_set_contract`     | `neutron1sq87ct42mza6sjpj9qgkfk3ngyaqc03ykf78z3e5hez68zfs4a5qyxl5pg` |
-| `withdrawal_manager_contract` | `neutron1tgw3d229d93rhk3hv68ff7f8zjs9lgk9lv9pkvp8fmt46ja47u0s02xxhg` |
-| `withdrawal_voucher_contract` | `neutron1hvr35t4s0r9nrt4taujyu704r4wfynp4ed5dz32pa7xcwzgwr9vs7vu4gy` |
+| `factory`                     | `neutron1yumnxj30nyxhvv4zdq963vk7v63mfjg5jghawxrgj4cc0fja829qugzjpt` |
+| `core_contract`               | `neutron1ja8hvq3yarz6yyman9qfqkkkvyp6neykka3grfznt40w53lrm8tsftjy9a` |
+| `distribution_contract`       | `neutron1d6rq2q993atet3n88erdjm774yun2y5e9fs8g8luy8a6dywsz9yq803eu2` |
+| `puppeteer_contract`          | `neutron1y2z92k32qwxpdn3psjju7eqt86eddlhtk7cjz4nky95xhsu005qqgyfcqf` |
+| `rewards_manager_contract`    | `neutron1g3n8re446lu62yfwfzsn7m6fwwl0amcke65hn2t0mjuzvfpp2dxqcczuvr` |
+| `rewards_pump_contract`       | `neutron1qdek37v7r3vlrxwa297x4vjzlrmyzu6ymzwa5fsu6q4y3hld635sf98ss6` |
+| `staker_contract`             | `neutron14aegmcv9ydtkkywmj9s3agewq4n7p0kdnz6mkrsqk80w7axyun0szs5n8f` |
+| `strategy_contract`           | `neutron1rs7g9005me78r0qyzyc5el9qdyv4fs9r8audr876jl7x5r3hs07s00wmqy` |
+| `token_contract`              | `neutron16l0qfrrahy5mve5x9nnw6zs9vv30k7rk55h6aaypq88ljwg57uxsxcg6y6` |
+| `validators_set_contract`     | `neutron1sq7a7kjyla0lyfdv44hct2kgf7efnw4g4flvzl9zf3exypwzuynqq28sgt` |
+| `unbonding_pump_contract`     | `neutron1vmv7swhz3q25t2qa58wtrqkkn9nreke9u9h70azl6wlcq0pr5utqyplrqk` |
+| `withdrawal_manager_contract` | `neutron1mlq0v5rqv03dvrl3vlsgffzsq7m84m3ffv4yqf3tez69w930x9dszeddlx` |
+| `withdrawal_voucher_contract` | `neutron1zcnkcdqs76zfcuewtskjnappumqk84nf2vrw5hctf8fqsgcs27mqkpnapq` |
 
 ### Denoms
 
 | Symbol  | Denom                                                                             |
 |---------|-----------------------------------------------------------------------------------|
-| `ATOM`  | `ibc/D1283F23CC25C39F16BCFB2DFFA9997AE7A101B92810D0F9F0AA092F6FE332D0`            |
-| `dATOM` | `factory/neutron1wgtjgeprg53wthczzlzpg0vrytuvfl9j59lpf87qd3mtj2dq6xysxvwcxd/drop` |
+| `ATOM`  | `ibc/9DF365E2C0EF4EA02FA771F638BB9C0C830EFCD354629BDC017F79B348B4E989`            |
+| `dATOM` | `factory/neutron16l0qfrrahy5mve5x9nnw6zs9vv30k7rk55h6aaypq88ljwg57uxsxcg6y6/udatom` |
+
+### ICA addresses
+
+| Contract                      | Address                                                              |
+|-------------------------------|----------------------------------------------------------------------|
+| `puppeteer_contract`          | `cosmos1r0ts4l7c26jrhx8ev403ylqrfk0j7z0jath52wh6t59a4drxj50qgqtlg4`  |
+| `unbonding_pump_contract`     | `cosmos1xfjwzvw9mv33atelre5vuhv7w48yg7nvyqwl2cf9zfjpkktmevgs7ks0a0`  |
+| `rewards_pump_contract`       | `cosmos1vkngfztggkzxzwrer005n96r0f2saa3xruqfkay9z93tnp76d0ksa5m0zg`  |
