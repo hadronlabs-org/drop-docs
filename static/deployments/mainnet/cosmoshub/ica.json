@@ -1,0 +1,18 @@
+[
+    {
+        "contract": "Puppeteer",
+        "address": "cosmos1srjdd7y6duuukmaenghucasqlycddcc65qdj34k6spq8pwk4h6ms7j4w4j"
+    },
+    {
+        "contract": "Unbonding Pump",
+        "address": "cosmos16nc8rqe7mwhrl3lu0hydfhspaemg8au6y646r8a08rg0la8xm9rqawkvzy"
+    },
+    {
+        "contract": "Rewards Pump",
+        "address": "cosmos10h8f0f98kyqa4nw58es97vmm8r6d8yrrg7ghup88ytr57jjwur2s47g2k3"
+    },
+    {
+        "contract": "Staker",
+        "address": "cosmos1h9hxhrtv5hqa572v2xejc98fr637ewm0unxnyk692twdfm554glqfkkp6z"
+    }
+]
