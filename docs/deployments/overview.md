@@ -13,12 +13,12 @@ To ensure the integrity and security of contracts uploaded to the network, it is
 
 ### Building
 
-The contracts were built using the git tag `v1.0.0`.
+The mainnet contracts were built using the git tag `v1.0.1`.
 
 To build the drop protocol contracts, simply clone the contracts repository and run `make build`:
 
 ```
-$ git clone --branch v1.0.0 https://github.com/hadronlabs-org/drop-contracts.git
+$ git clone --branch v1.0.1 https://github.com/hadronlabs-org/drop-contracts.git
 .....
 $ cd drop-contracts
 .....
@@ -72,7 +72,7 @@ Or you can use [Celatone](https://neutron.celat.one/neutron-1). Search for contr
 3. Obtain the checksum of the deployed contract:
 
    ```
-   neutrond q wasm code-info 1720 --node https://rpc-talzor.neutron-1.neutron.org:443
+   neutrond q wasm code-info 1800 --node https://rpc-talzor.neutron-1.neutron.org:443
    ```
 
 4. Compare the obtained checksums to confirm integrity.
