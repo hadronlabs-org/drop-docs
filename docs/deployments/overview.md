@@ -79,4 +79,4 @@ Or you can use [Celatone](https://neutron.celat.one/neutron-1). Search for contr
 
 ## Contracts and Their Checksums
 
-You can find contracts checksums, code id and addresses on the next two pages: [testnet](./testnet.md) and [mainnet](./mainnet.md).
+You can find contracts checksums, code id and addresses on the next two pages: [testnet](./testnet.mdx) and [mainnet](./mainnet.mdx).
