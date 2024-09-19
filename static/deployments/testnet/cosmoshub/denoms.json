@@ -1,0 +1,10 @@
+[
+    {
+        "symbol": "ATOM",
+        "denom": "ibc/9DF365E2C0EF4EA02FA771F638BB9C0C830EFCD354629BDC017F79B348B4E989"
+    },
+    {
+        "symbol": "dATOM",
+        "denom": "factory/neutron16l0qfrrahy5mve5x9nnw6zs9vv30k7rk55h6aaypq88ljwg57uxsxcg6y6/udatom"
+    }
+]
