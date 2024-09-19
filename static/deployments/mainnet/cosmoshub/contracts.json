@@ -7,7 +7,7 @@
     {
         "name": "Core",
         "address": "neutron16m3hjh7l04kap086jgwthduma0r5l0wh8kc6kaqk92ge9n5aqvys9q6lxr",
-        "checksum": "19E555870765ADB32DC51E0BD25398B561CC459B68CC2E0EECC6C4B943167169"
+        "checksum": "4994F1B4B2201DBAF45691A384E9A1445E076809FE38AC793C36F9E048903927"
     },
     {
         "name": "Distribution",
@@ -72,6 +72,6 @@
     {
         "name": "Redemption Rate",
         "address": "neutron133r4wfczhq6xec35s859sxpy2h2le3xc9g6u388chhaaldhtp7cqus6yju",
-        "checksum": "F6A231A1969CBA69040572C1CB540735C87BE912211E65C81C0B816622BE0288"
+        "checksum": "4FC3E336CEA6683EEE0AC052EEABD9286F9AEBA4C2EE2397C17D4769A0C38399"
     }
 ]
