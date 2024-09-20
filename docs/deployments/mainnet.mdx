@@ -21,7 +21,9 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
       const href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
       return (
         <tr>
-          <td>{contract.name}</td>
+          <td>
+            <code>{contract.name}</code>
+          </td>
           <td>
             <a href={href}>{contract.address}</a>
           </td>

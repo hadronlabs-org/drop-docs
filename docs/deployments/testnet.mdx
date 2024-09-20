@@ -23,7 +23,9 @@ Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
       const href = `https://neutron.celat.one/pion-1/contracts/${contract.address}`;
       return (
         <tr>
-          <td>{contract.name}</td>
+          <td>
+            <code>{contract.name}</code>
+          </td>
           <td>
             <a href={href}>{contract.address}</a>
           </td>
