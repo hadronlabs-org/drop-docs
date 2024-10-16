@@ -3,7 +3,6 @@ slug: /
 ---
 
 # Introduction
-Learn how Drop protocol manages cross-chain delegations and build integration and dApps with dAssets. 
 
 ![image](/img/banner.png)
 
