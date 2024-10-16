@@ -118,6 +118,6 @@ Users can track how many Droplets they’ve earned from their referrals on [drop
 To mitigate the potential for bot attacks and system gaming, users must login to Twitter/X and meet a few basic proof-of-personhood requirements to generate a Drop referral link:
 
 1. They have at least 50 Twitter/X followers
-1. Their account was createed before NN Jun 2024
+1. Their account was createed before MM Jun 2024
 
 Drop prevents receiving multiple referral links using a single Twitter/X account.
