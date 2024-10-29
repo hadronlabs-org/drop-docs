@@ -3,6 +3,8 @@ import CosmosHubDenoms from "/deployments/testnet/cosmoshub/denoms.json";
 import CosmosHubICA from "/deployments/testnet/cosmoshub/ica.json";
 
 import InitiaContracts from "/deployments/testnet/initia/contracts.json";
+import InitiaDenoms from "/deployments/testnet/initia/denoms.json";
+import InitiaICA from "/deployments/testnet/initia/ica.json";
 
 # pion-1 [testnet]
 
@@ -19,7 +21,7 @@ import InitiaContracts from "/deployments/testnet/initia/contracts.json";
     </tr>
   </thead>
   <tbody>
-    {Contracts.map((contract) => {
+    {InitiaContracts.map((contract) => {
       const href = `https://neutron.celat.one/pion-1/contracts/${contract.address}`;
       return (
         <tr>
@@ -40,7 +42,49 @@ import InitiaContracts from "/deployments/testnet/initia/contracts.json";
 
 ### Denoms
 
-### ICA address
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Denom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaDenoms.map((denom) => {
+      return (
+        <tr>
+          <td>{denom.symbol}</td>
+          <td>
+            <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### ICA addresses
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaICA.map((ica) => {
+      return (
+        <tr>
+          <td>{ica.contract}</td>
+          <td>
+            <code>{ica.address}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
 
 ## Cosmos Hub Instance
 
