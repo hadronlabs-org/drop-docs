@@ -1,12 +1,12 @@
-import Contracts from "/deployments/testnet/cosmoshub/contracts.json";
-import Denoms from "/deployments/testnet/cosmoshub/denoms.json";
-import ICA from "/deployments/testnet/cosmoshub/ica.json";
+import CosmosHubContracts from "/deployments/testnet/cosmoshub/contracts.json";
+import CosmosHubDenoms from "/deployments/testnet/cosmoshub/denoms.json";
+import CosmosHubICA from "/deployments/testnet/cosmoshub/ica.json";
+
+import InitiaContracts from "/deployments/testnet/initia/contracts.json";
 
 # pion-1 [testnet]
 
-## Cosmos Hub Instance
-
-Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
+## Initia Instance
 
 ### Contracts
 
@@ -40,6 +40,44 @@ Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
 
 ### Denoms
 
+### ICA address
+
+## Cosmos Hub Instance
+
+Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
+
+### Contracts
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+      <th>Checksum</th>
+    </tr>
+  </thead>
+  <tbody>
+    {CosmosHubContracts.map((contract) => {
+      const href = `https://neutron.celat.one/pion-1/contracts/${contract.address}`;
+      return (
+        <tr>
+          <td>
+            <code>{contract.name}</code>
+          </td>
+          <td>
+            <a href={href}>{contract.address}</a>
+          </td>
+          <td>
+            <code>{contract.checksum}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### Denoms
+
 <table>
   <thead>
     <tr>
@@ -48,7 +86,7 @@ Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
     </tr>
   </thead>
   <tbody>
-    {Denoms.map((denom) => {
+    {CosmosHubDenoms.map((denom) => {
       return (
         <tr>
           <td>{denom.symbol}</td>
@@ -71,7 +109,7 @@ Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
     </tr>
   </thead>
   <tbody>
-    {ICA.map((ica) => {
+    {CosmosHubICA.map((ica) => {
       return (
         <tr>
           <td>{ica.contract}</td>
