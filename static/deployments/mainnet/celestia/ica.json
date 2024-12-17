@@ -1,0 +1,14 @@
+[
+    {
+        "contract": "Puppeteer",
+        "address": "celestia15xvs73zpnfkrkdvm0k5wrdfz2kjfhd5vz9nnujyvagpq9sqjh3jqkp2tp3"
+    },
+    {
+        "contract": "Unbonding Pump",
+        "address": "celestia1p4penwcn3uudnam3zg24t7tgjq07r4tjnf97jx8pc7ykdt43ke3sndfdd4"
+    },
+    {
+        "contract": "Rewards Pump",
+        "address": "celestia13qe9fxcd63ym5gt4fc235ugdv9zzjejuwky7glqq8xtdc66r9g6sn4vfr6"
+    }
+]
