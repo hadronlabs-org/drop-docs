@@ -1,0 +1,67 @@
+[
+    {
+        "name": "factory_contract",
+        "address": "neutron1jsgdmarlyuny7wvv4xc3lglxm684xeh4xhlpkndyw73zppxtsahs9k7t0s",
+        "checksum": "E78C53DAC0744180EEEE11D73B8DF8836B6CB71C1EADF774E1E81AAE1F03A8B0"
+    },
+    {
+        "name": "core_contract",
+        "address": "neutron1fp649j8djj676kfvh0qj8nt90ne86a8f033w9q7p9vkcqk9mmeeqxc9955",
+        "checksum": "EE5461021B3C4CECA146470D80F86C899AAA8E83C92D35FC908471583305D7F8"
+    },
+    {
+        "name": "distribution_contract",
+        "address": "neutron1xuywwkrtyyde8e3gcam2n567zj0aw5kluw9xjd8gnujuyqxj5vpscmk9hl",
+        "checksum": "ADFAFFB0D75A8449509896A7635B69F9D4F2CCC87DC5A05A59F5211500B55FD0"
+    },
+    {
+        "name": "puppeteer_contract",
+        "address": "neutron1vqtnu54addf87qp73fnjvqafruzkr2zjgswkhsmsg45t08wla2nqqan0hc",
+        "checksum": "A9DEE45DF0A5862B890B1CF0F2714611B778E4014042E47955B2D8369604BF2B"
+    },
+    {
+        "name": "rewards_manager_contract",
+        "address": "neutron16ve2yj7qp6y7vc4svplalu8gez34vd65u685f6r7c0nc7ucvvq2sk45r8c",
+        "checksum": "E42A1919CB721C93B147010D31708C6FE6D3452AE440EEE350C58AF554C91E00"
+    },
+    {
+        "name": "rewards_pump_contract",
+        "address": "neutron1mtyp7tyq2rt4nk9qe3l3mmun5zy3k84s9ccndt6z7g6rwuyllqlq6kafzy",
+        "checksum": "8B141CB00F7D492CE8C5443B9CD6F6FF856AA307BE93759CC4CAEB8588F14CA5"
+    },
+    {
+        "name": "strategy_contract",
+        "address": "neutron1l36yrtfsqrd6pup8m3nk43hvhjgd99t3pncpm6spmck9djy3cgsqjwaz6m",
+        "checksum": "B8C10210FF6880C9F13E63BCBE9B2D8FE3E7650BE5C44BCC74085C4DFAAF961C"
+    },
+    {
+        "name": "token_contract",
+        "address": "neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq",
+        "checksum": "C7B57C67974473B2BF1CE5A11A70AFBCB37756E64701DCEAEC34F234EA2E7DAA"
+    },
+    {
+        "name": "validators_set_contract",
+        "address": "neutron1zctawcec0s503qmvkw4da4erne83nv0w8wzal0kyfvkxxezkgxcssmhj2h",
+        "checksum": "D41EE074FFE34E7B3D048043E9A7BD7945266E4CC75401A8FF5E959D205A03C3"
+    },
+    {
+        "name": "unbonding_pump_contract",
+        "address": "neutron1ntsvzh48jru8l044vazgw0p2sx0eae3qrrffyjea08lvccm47fpqh2e32n",
+        "checksum": "8B141CB00F7D492CE8C5443B9CD6F6FF856AA307BE93759CC4CAEB8588F14CA5"
+    },
+    {
+        "name": "withdrawal_manager_contract",
+        "address": "neutron1l343cnfh85hjefxuhxhxyzvunanteu8gc5xu4teuf3v5yxlslj0s7f9f06",
+        "checksum": "ED77F05D4EBC325F8ED83D9E8808BE9921306B7DD0E450547C5035E757749765"
+    },
+    {
+        "name": "withdrawal_voucher_contract",
+        "address": "neutron1atrxup8mj3dky7jcch3e3524t97hgdzfud9kc6zrkw3dwmgf69ws37ruc5",
+        "checksum": "7408C55C2A1D0EA56A789EC437E5F8A7233271B17C0E79662AFD07689B0A4B59"
+    },
+    {
+        "name": "splitter_contract",
+        "address": "neutron1q7pct93xm8qunmnjyu2feezjznhyedsf968u72p6ma2mcg755t0susl2gv",
+        "checksum": "AC0E1516637092666E43FA64CF2A1B9B2479A9B318A246656DDA530DD6D4BFB7"
+    }
+]

@@ -1,6 +1,10 @@
-import Contracts from "/deployments/mainnet/cosmoshub/contracts.json";
-import Denoms from "/deployments/mainnet/cosmoshub/denoms.json";
-import ICA from "/deployments/mainnet/cosmoshub/ica.json";
+import CosmosHubContracts from "/deployments/mainnet/cosmoshub/contracts.json";
+import CosmosHubDenoms from "/deployments/mainnet/cosmoshub/denoms.json";
+import CosmosHubICA from "/deployments/mainnet/cosmoshub/ica.json";
+
+import CelestiaContracts from "/deployments/mainnet/celestia/contracts.json";
+import CelestiaDenoms from "/deployments/mainnet/celestia/denoms.json";
+import CelestiaICA from "/deployments/mainnet/celestia/ica.json";
 
 # neutron-1 [mainnet]
 
@@ -17,7 +21,7 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
     </tr>
   </thead>
   <tbody>
-    {Contracts.map((contract) => {
+    {CosmosHubContracts.map((contract) => {
       const href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
       return (
         <tr>
@@ -46,7 +50,7 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
     </tr>
   </thead>
   <tbody>
-    {Denoms.map((denom) => {
+    {CosmosHubDenoms.map((denom) => {
       return (
         <tr>
           <td>{denom.symbol}</td>
@@ -69,7 +73,85 @@ Current Cosmos Hub Drop instance is running on `cosmoshub-4` mainnet.
     </tr>
   </thead>
   <tbody>
-    {ICA.map((ica) => {
+    {CosmosHubICA.map((ica) => {
+      return (
+        <tr>
+          <td>{ica.contract}</td>
+          <td>
+            <code>{ica.address}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+## Celestia Instance
+
+Current Celestia Drop instance is running on `celestia` mainnet.
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+      <th>Checksum</th>
+    </tr>
+  </thead>
+  <tbody>
+    {CelestiaContracts.map((contract) => {
+      const href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
+      return (
+        <tr>
+          <td>
+            <code>{contract.name}</code>
+          </td>
+          <td>
+            <a href={href}>{contract.address}</a>
+          </td>
+          <td>
+            <code>{contract.checksum}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### Denoms
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Denom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {CelestiaDenoms.map((denom) => {
+      return (
+        <tr>
+          <td>{denom.symbol}</td>
+          <td>
+            <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### ICA addresses
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {CelestiaICA.map((ica) => {
       return (
         <tr>
           <td>{ica.contract}</td>
