@@ -1,0 +1,10 @@
+[
+    {
+        "symbol": "TIA",
+        "denom": "ibc/773B4D0A3CD667B2275D5A4A7A2F0909C0BA0F4059C0B9181E680DDF4965DCC7"
+    },
+    {
+        "symbol": "dTIA",
+        "denom": "factory/neutron1ut4c6pv4u6vyu97yw48y8g7mle0cat54848v6m97k977022lzxtsaqsgmq/udtia"
+    }
+]
