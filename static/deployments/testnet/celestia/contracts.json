@@ -20,11 +20,6 @@
         "checksum": "A9DEE45DF0A5862B890B1CF0F2714611B778E4014042E47955B2D8369604BF2B"
     },
     {
-        "name": "rewards_manager_contract",
-        "address": "neutron1xnydumudr6f06m97hglkp9wghaglqwa36al7semsxq2eejxxjj7s6wha7v",
-        "checksum": "E42A1919CB721C93B147010D31708C6FE6D3452AE440EEE350C58AF554C91E00"
-    },
-    {
         "name": "rewards_pump_contract",
         "address": "neutron148ect63a5djyd3c29vtv95x775pg3r3cgzqhgcy5njqgr9ch3ezsk252m2",
         "checksum": "8B141CB00F7D492CE8C5443B9CD6F6FF856AA307BE93759CC4CAEB8588F14CA5"
