@@ -63,5 +63,10 @@
         "name": "splitter_contract",
         "address": "neutron1q7pct93xm8qunmnjyu2feezjznhyedsf968u72p6ma2mcg755t0susl2gv",
         "checksum": "0B50A7DA3201546E6842FD0C4B72F7A8AD381D3FA410F02683E5B48C41A355F2"
+    },
+    {
+        "name": "native_bond_provider_contract",
+        "address": "neutron1magrezmlc5ldnepz9e77emjycu62vh9zt46njnk5dsfav3z0dsaqwk3uu8",
+        "checksum": "2F0C5DC5289202B27E40E7BDB68B60D6AD6243885285B0839467ABAD2102EBA0"
     }
 ]
