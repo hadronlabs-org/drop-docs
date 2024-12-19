@@ -20,11 +20,6 @@
         "checksum": "01519B69E5F6756EBD806BCB2B29903A9353759C5CB9CEACA2998AE8BBDA3D91"
     },
     {
-        "name": "rewards_manager_contract",
-        "address": "neutron16ve2yj7qp6y7vc4svplalu8gez34vd65u685f6r7c0nc7ucvvq2sk45r8c",
-        "checksum": "615E1277FEE2E9F8FF8516821A70C7B12EAF64D60AE4AF86B127757DA02E79A3"
-    },
-    {
         "name": "rewards_pump_contract",
         "address": "neutron1mtyp7tyq2rt4nk9qe3l3mmun5zy3k84s9ccndt6z7g6rwuyllqlq6kafzy",
         "checksum": "8D18FC904DF3638C4A6E31C71B8A977D84C0E71EADF16ADC063C523F9AB4B83E"
@@ -63,5 +58,10 @@
         "name": "splitter_contract",
         "address": "neutron1q7pct93xm8qunmnjyu2feezjznhyedsf968u72p6ma2mcg755t0susl2gv",
         "checksum": "0B50A7DA3201546E6842FD0C4B72F7A8AD381D3FA410F02683E5B48C41A355F2"
+    },
+    {
+        "name": "native_bond_provider_contract",
+        "address": "neutron1magrezmlc5ldnepz9e77emjycu62vh9zt46njnk5dsfav3z0dsaqwk3uu8",
+        "checksum": "2F0C5DC5289202B27E40E7BDB68B60D6AD6243885285B0839467ABAD2102EBA0"
     }
 ]
