@@ -9,11 +9,12 @@ The Droplets Program aims to:
 * Coordinate market participants to maximize the economic welfare of the Interchain
 * Measure the value of a participant’s contribution to the protocol’s success
 
-100,000,000 DROP tokens—the governance token of Drop Protocol—will be distributed to Droplets Program participants. Users can earn Droplets by:
+Phase One of the Droplets Program originally allocated 100,000,000 DROP tokens—the governance token of Drop Protocol—to participants. Phase Two, now live, adds an additional 50,000,000 DROP tokens. 
 
-* Liquid staking with Drop
-* Using dAssets in ecosystem applications
-* Referring friends
+This brings the total program allocation to 150,000,000 DROP tokens, distributed as follows:
+
+- Phase One: 100,000,000 DROP
+- Phase Two: 50,000,000 DROP
 
 When the program ends, Droplets holders will receive Drop tokens and become the first members of the Drop DAO.
 
