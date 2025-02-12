@@ -9,7 +9,7 @@ The Droplets Program aims to:
 * Coordinate market participants to maximize the economic welfare of the Interchain
 * Measure the value of a participant’s contribution to the protocol’s success
 
-Phase One of the Droplets Program originally allocated 100,000,000 DROP tokens—the governance token of Drop Protocol—to participants. Phase Two, now live, adds an additional 50,000,000 DROP tokens. 
+Phase One of the Droplets Program originally allocated 100,000,000 DROP tokens — the governance token of Drop Protocol — to participants. Phase Two, now live, adds an additional 50,000,000 DROP tokens. 
 
 This brings the total program allocation to 150,000,000 DROP tokens, distributed as follows:
 
@@ -33,23 +33,15 @@ Collaborating with ecosystem partners to create flywheels that unlock frozen cap
 ## Droplet Program structure
 
 
-The Droplets Program will last six months or until the DROP Token Generation Event (TGE) (whichever is sooner), and is divided into Epochs, which are roughly 1-4 weeks long. Each Epoch introduces new opportunities to earn Droplets, which are additive, meaning Droplets are not reset between Epochs. Rules and guidelines for new Epochs will not retroactively impact Droplets earned in previous Epochs, and new protocols and integrations can be introduced within Epochs.
+The first phase of the Droplets Program began with the launch of the program and ran for 6 months. The program’s second phase, which started on February 12, will continue further until the Token Generation Event (TGE). The exact timing for TGE will be announced closer to the event.
+
+During this period, the program progresses through a series of *Epochs*, each lasting approximately 1–4 weeks. Each Epoch introduces new opportunities to earn Droplets, which are additive, meaning Droplets are not reset between Epochs. Rules and guidelines for new Epochs will not retroactively impact Droplets earned in previous Epochs, and new protocols and integrations can be introduced within Epochs.
 
 ## Droplet multipliers
 
-| Network | Project   | Description                                                                                                   | Support Time | Multiplier |
-|---------|-----------|---------------------------------------------------------------------------------------------------------------|--------------|------------|
-| Neutron | Astroport | Provide liquidity on the dATOM/NTRN pool: earn 50x Droplet multiplier + potential trading fees and incentives | Epoch 1      | 50x        |
-| Neutron | Astroport | Provide liquidity on the dATOM/USDC pool: earn 50x Droplet multiplier + potential trading fees and incentives | Epoch 1      | 50x        |
-| Neutron | Astroport | Provide liquidity on the dATOM/ATOM pool: earn 5x Droplet multiplier + potential trading fees and incentives  | Epoch 1      | 50x        |
-| Neutron | Apollo    | Deposit Astroport dATOM/NTRN LP positions into Apollo auto-compounding vaults: earn 50x multiplier            | Epoch 1      | 50x        |
-| Neutron | Apollo    | Deposit Astroport dATOM/USDC LP positions into Apollo auto-compounding vaults: earn 50x multiplier            | Epoch 1      | 50x        |
-| Neutron | Apollo    | Deposit Astroport dATOM/ATOM LP positions into Apollo auto-compounding vaults: earn 5x multiplier             | Epoch 1      | 5x         |
-| Neutron | Levana    | Provide liquidity in Levana’s perpetual market: dATOM xLP earns 50x multiplier                                | Epoch 1      | 50x        |
-| Neutron | Levana    | Provide liquidity in Levana’s perpetual market: dATOM LP earns 5x multiplier                                  | Epoch 1      | 5x         |
+For the most up-to-date information on multipliers and boosters, please refer to [droplets.drop.money](https://droplets.drop.money).
 
-For chains and apps interested in participating in future Epochs to attract new users and capital, please reach out via DM on Twitter/X @dropdotmoney.
-
+For chains and apps interested in participating in future Epochs to attract new users and capital, please reach out via DM on Twitter/X (https://twitter.com/dropdotmoney)[@dropdotmoney].
 
 ## Airdrop details
 
@@ -61,7 +53,7 @@ The airdrop is geared toward long-term and power users of the protocol rather th
 Smaller Droplets holders will receive their full airdrop immediately upon distribution, while up to 50% of larger airdrops will vest linearly over six months.
 Tokens that are locked will retain full voting power in the Drop DAO while vesting, and the liquid portion of the airdrop will be transferable immediately upon receipt.
 
-100,000,000 DROP (10% of the total token supply) will be distributed to Droplet holders as part of Droplets Program. All dAssets, including dATOM, dTIA, and any future dAssets listed on Drop, are eligible to receive Droplets from the day they launch.
+DROP tokens are allocated to the Droplets Program in two phases – 100,000,000 DROP (10% of the total token supply) in Phase One, and 50,000,000 DROP (5% of the total token supply) in Phase Two – and will be distributed to Droplet holders at TGE. All dAssets, including dATOM, dTIA, and any future dAssets listed on Drop, are eligible to receive Droplets from the day they launch.
 
 ## Tracking progress & exploring opportunities
 
@@ -114,7 +106,7 @@ The referral component of the Droplets Program allows users to refer friends to 
 * 12.5% of the Droplets anyone their referral refers
 
 These are bonus Droplets and do not subtract from the referrals earnings.
-Users can track how many Droplets they’ve earned from their referrals on [droplets.drop.money](https://droplets.drop.money).
+Users can track how many Droplets they’ve earned from their referrals on [droplets.drop.money](https://droplets.drop.money/).
 
 
 To mitigate the potential for bot attacks and system gaming, users must login to Twitter/X and meet a few basic proof-of-personhood requirements to generate a Drop referral link.
