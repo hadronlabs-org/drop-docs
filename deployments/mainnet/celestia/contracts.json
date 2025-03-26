@@ -63,5 +63,10 @@
         "name": "native_bond_provider_contract",
         "address": "neutron1magrezmlc5ldnepz9e77emjycu62vh9zt46njnk5dsfav3z0dsaqwk3uu8",
         "checksum": "2F0C5DC5289202B27E40E7BDB68B60D6AD6243885285B0839467ABAD2102EBA0"
+    },
+    {
+        "name": "val_ref_contract",
+        "address": "neutron1wcnxvjsy9cmfu476ft9js46cvk8mkvnynvvya2t9vesm39wpcfasn3gxnh",
+        "checksum": "B96C7BDC66C08A6AD4EDB6554339C339EB28A70CEA66F59C4BB8382A6342A85E"
     }
 ]
