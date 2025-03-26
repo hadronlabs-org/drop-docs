@@ -73,10 +73,5 @@
         "name": "redemption_rate_contract",
         "address": "neutron133r4wfczhq6xec35s859sxpy2h2le3xc9g6u388chhaaldhtp7cqus6yju",
         "checksum": "4FC3E336CEA6683EEE0AC052EEABD9286F9AEBA4C2EE2397C17D4769A0C38399"
-    },
-    {
-        "name": "val_ref_contract",
-        "address": "neutron1wcnxvjsy9cmfu476ft9js46cvk8mkvnynvvya2t9vesm39wpcfasn3gxnh",
-        "checksum": "B96C7BDC66C08A6AD4EDB6554339C339EB28A70CEA66F59C4BB8382A6342A85E"
     }
 ]
