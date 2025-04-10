@@ -6,6 +6,9 @@ import CelestiaContracts from "/deployments/mainnet/celestia/contracts.json";
 import CelestiaDenoms from "/deployments/mainnet/celestia/denoms.json";
 import CelestiaICA from "/deployments/mainnet/celestia/ica.json";
 
+import NativeContracts from "/deployments/mainnet/native/contracts.json";
+import NativeDenoms from "/deployments/mainnet/native/denoms.json";
+
 # neutron-1 [mainnet]
 
 ## Cosmos Hub Instance
@@ -157,6 +160,61 @@ Current Celestia Drop instance is running on `celestia` mainnet.
           <td>{ica.contract}</td>
           <td>
             <code>{ica.address}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+## Neutron Native Instance
+
+Current native Neutron Drop instance is running on `neutron-1` mainnet.
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+      <th>Checksum</th>
+    </tr>
+  </thead>
+  <tbody>
+    {NativeContracts.map((contract) => {
+      const href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
+      return (
+        <tr>
+          <td>
+            <code>{contract.name}</code>
+          </td>
+          <td>
+            <a href={href}>{contract.address}</a>
+          </td>
+          <td>
+            <code>{contract.checksum}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### Denoms
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Denom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {NativeDenoms.map((denom) => {
+      return (
+        <tr>
+          <td>{denom.symbol}</td>
+          <td>
+            <code>{denom.denom}</code>
           </td>
         </tr>
       );

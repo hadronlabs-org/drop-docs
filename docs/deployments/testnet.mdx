@@ -10,6 +10,9 @@ import CelestiaContracts from "/deployments/testnet/celestia/contracts.json";
 import CelestiaDenoms from "/deployments/testnet/celestia/denoms.json";
 import CelestiaICA from "/deployments/testnet/celestia/ica.json";
 
+import NativeContracts from "/deployments/testnet/native/contracts.json";
+import NativeDenoms from "/deployments/testnet/native/denoms.json";
+
 # pion-1 [testnet]
 
 ## Initia Instance
@@ -249,3 +252,61 @@ Current Celestia Drop testnet instance uses `mocha-4` testnet.
     })}
   </tbody>
 </table>
+
+## Neutron Native testnet
+
+Current native Neutron Drop testnet instance uses `pion-1` testnet.
+
+### Contracts
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+      <th>Checksum</th>
+    </tr>
+  </thead>
+  <tbody>
+    {NativeContracts.map((contract) => {
+      const href = `https://neutron.celat.one/pion-1/contracts/${contract.address}`;
+      return (
+        <tr>
+          <td>
+            <code>{contract.name}</code>
+          </td>
+          <td>
+            <a href={href}>{contract.address}</a>
+          </td>
+          <td>
+            <code>{contract.checksum}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### Denoms
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Denom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {NativeDenoms.map((denom) => {
+      return (
+        <tr>
+          <td>{denom.symbol}</td>
+          <td>
+            <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
