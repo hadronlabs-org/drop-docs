@@ -328,7 +328,7 @@ After that, the user receives a withdrawal voucher that they can use to withdraw
 
 ### Withdrawal
 
-Withdrawal of the ASSET implies sending the NFT to `withdrawal_manager` with the following message attached:
+Withdrawal of the ASSET implies sending the NFT to `withdrawal_voucher_contract` with the following message attached:
 
 ```json
 {
