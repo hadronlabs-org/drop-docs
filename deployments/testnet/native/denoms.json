@@ -1,0 +1,10 @@
+[
+  {
+    "symbol": "NTRN",
+    "denom": "untrn"
+  },
+  {
+    "symbol": "dNTRN",
+    "denom": "factory/neutron1ytalpjvxz7njekfep97sss2s83ezw6q8lt9spsvnd2d43ygys9gssy7ept/udntrn"
+  }
+]
