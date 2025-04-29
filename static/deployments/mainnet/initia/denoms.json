@@ -1,0 +1,10 @@
+[
+  {
+    "symbol": "move/543b35a39cfadad3da3c23249c474455d15efd2f94f849473226dee8a3c7a9e1",
+    "denom": "ibc/0AFE3A940F9F6030164DCFA96B4DA132E2DD234E11A44E2F88D279A9C34874FA"
+  },
+  {
+    "symbol": "deINIT",
+    "denom": "factory/neutron10546f0nskmykr27s85l953gztyevxluqdd3ycl0guf648p68r2fsukxxnr/udinit"
+  }
+]
