@@ -15,84 +15,6 @@ import NativeDenoms from "/deployments/testnet/native/denoms.json";
 
 # pion-1 [testnet]
 
-## Initia Instance
-
-### Contracts
-
-<table>
-  <thead>
-    <tr>
-      <th>Contract</th>
-      <th>Address</th>
-      <th>Checksum</th>
-    </tr>
-  </thead>
-  <tbody>
-    {InitiaContracts.map((contract) => {
-      const href = `https://neutron.celat.one/pion-1/contracts/${contract.address}`;
-      return (
-        <tr>
-          <td>
-            <code>{contract.name}</code>
-          </td>
-          <td>
-            <a href={href}>{contract.address}</a>
-          </td>
-          <td>
-            <code>{contract.checksum}</code>
-          </td>
-        </tr>
-      );
-    })}
-  </tbody>
-</table>
-
-### Denoms
-
-<table>
-  <thead>
-    <tr>
-      <th>Symbol</th>
-      <th>Denom</th>
-    </tr>
-  </thead>
-  <tbody>
-    {InitiaDenoms.map((denom) => {
-      return (
-        <tr>
-          <td>{denom.symbol}</td>
-          <td>
-            <code>{denom.denom}</code>
-          </td>
-        </tr>
-      );
-    })}
-  </tbody>
-</table>
-
-### ICA addresses
-
-<table>
-  <thead>
-    <tr>
-      <th>Contract</th>
-      <th>Address</th>
-    </tr>
-  </thead>
-  <tbody>
-    {InitiaICA.map((ica) => {
-      return (
-        <tr>
-          <td>{ica.contract}</td>
-          <td>
-            <code>{ica.address}</code>
-          </td>
-        </tr>
-      );
-    })}
-  </tbody>
-</table>
-
 ## Cosmos Hub Instance
 
 Current Cosmos Hub Drop testnet instance uses `theta-testnet-001` testnet.
@@ -303,6 +225,84 @@ Current native Neutron Drop testnet instance uses `pion-1` testnet.
           <td>{denom.symbol}</td>
           <td>
             <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+## Initia Instance
+
+### Contracts
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+      <th>Checksum</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaContracts.map((contract) => {
+      const href = `https://neutron.celat.one/pion-1/contracts/${contract.address}`;
+      return (
+        <tr>
+          <td>
+            <code>{contract.name}</code>
+          </td>
+          <td>
+            <a href={href}>{contract.address}</a>
+          </td>
+          <td>
+            <code>{contract.checksum}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### Denoms
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Denom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaDenoms.map((denom) => {
+      return (
+        <tr>
+          <td>{denom.symbol}</td>
+          <td>
+            <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### ICA addresses
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaICA.map((ica) => {
+      return (
+        <tr>
+          <td>{ica.contract}</td>
+          <td>
+            <code>{ica.address}</code>
           </td>
         </tr>
       );

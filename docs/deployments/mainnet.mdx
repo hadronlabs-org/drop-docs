@@ -6,6 +6,10 @@ import CelestiaContracts from "/deployments/mainnet/celestia/contracts.json";
 import CelestiaDenoms from "/deployments/mainnet/celestia/denoms.json";
 import CelestiaICA from "/deployments/mainnet/celestia/ica.json";
 
+import InitiaContracts from "/deployments/mainnet/initia/contracts.json";
+import InitiaDenoms from "/deployments/mainnet/initia/denoms.json";
+import InitiaICA from "/deployments/mainnet/initia/ica.json";
+
 import NativeContracts from "/deployments/mainnet/native/contracts.json";
 import NativeDenoms from "/deployments/mainnet/native/denoms.json";
 
@@ -215,6 +219,84 @@ Current native Neutron Drop instance is running on `neutron-1` mainnet.
           <td>{denom.symbol}</td>
           <td>
             <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+## Initia Instance
+
+Current Initia Drop instance is running on `interwoven-1` mainnet.
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+      <th>Checksum</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaContracts.map((contract) => {
+      const href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
+      return (
+        <tr>
+          <td>
+            <code>{contract.name}</code>
+          </td>
+          <td>
+            <a href={href}>{contract.address}</a>
+          </td>
+          <td>
+            <code>{contract.checksum}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### Denoms
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Denom</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaDenoms.map((denom) => {
+      return (
+        <tr>
+          <td>{denom.symbol}</td>
+          <td>
+            <code>{denom.denom}</code>
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+
+### ICA addresses
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {InitiaICA.map((ica) => {
+      return (
+        <tr>
+          <td>{ica.contract}</td>
+          <td>
+            <code>{ica.address}</code>
           </td>
         </tr>
       );
