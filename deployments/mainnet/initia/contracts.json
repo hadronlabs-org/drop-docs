@@ -68,5 +68,25 @@
     "name": "native_bond_provider_contract",
     "address": "neutron1fvg4fy9je2jakq62juxmt4dwga9le2fez2dvsgnyukpd9mqzg80s08w68m",
     "checksum": "1F0EAFBB89282E46E0F3D5AE6FD72E91DBCC29C3D1CAF3DB4CD7FF91B0229B59"
+  },
+  {
+    "name": "drop_lp_object_address",
+    "address": "0x2ecfb78e44ae0b898d8ffbae7c5c0ff9a776ca61dd3514353c6339321d08dac4",
+    "checksum": "-"
+  },
+  {
+    "name": "drop_lp_module_address",
+    "address": "0xd8cba23cdaf8e969fd17c8eabecf82a4f002ee8d",
+    "checksum": "-"
+  },
+  {
+    "name": "bonding_mirror_contract",
+    "address": "neutron17xv0rrf020uppc6304x6tvgr3yumausk7y5esac7srv37setyz2sqt485d",
+    "checksum": "430604A53EAB1BE2A71FF0D998EEDF8E96FABBFBE475FBBB9FD96A36690315F0"
+  },
+  {
+    "name": "unbonding_mirror_contract",
+    "address": "neutron1awqp9hxpfmdcqn9e88pgvz0skfq0cv5ep2uhwecvr0nq49saxwxqss7lr3",
+    "checksum": "553C8065D51433C6BB45CE0BA856E60FDF4D7897243C449BEC53E7DC3CA9BE07"
   }
 ]
