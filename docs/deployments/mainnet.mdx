@@ -240,7 +240,13 @@ Current Initia Drop instance is running on `interwoven-1` mainnet.
   </thead>
   <tbody>
     {InitiaContracts.map((contract) => {
-      const href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
+      let href = "";
+      
+      if(contract.address.startsWith('0x')) {
+        href = `https://scan.initia.xyz/interwoven-1/accounts/${contract.address}`;
+      } else {
+        href = `https://neutron.celat.one/neutron-1/contracts/${contract.address}`;
+      }
       return (
         <tr>
           <td>
@@ -255,6 +261,7 @@ Current Initia Drop instance is running on `interwoven-1` mainnet.
         </tr>
       );
     })}
+
   </tbody>
 </table>
 
