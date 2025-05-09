@@ -32,6 +32,7 @@ const sidebars = {
             "integrations/referral",
             "integrations/lsm_staking",
             "integrations/tvl",
+            "integrations/nft_status",
           ],
         },
         {
