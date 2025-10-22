@@ -17,7 +17,7 @@
     {
         "name": "puppeteer_contract",
         "address": "neutron15v5acjfttf3umzatmj7rqfjy6yzcgekh266ehjsxclvaem0hpd7q9qpscr",
-        "checksum": "D4E62CB36C3E8D2C70B5C7B77A088A1635969C14D7A0FAF099206415A70D1739"
+        "checksum": "AE79CF71AF12DB1E482B1BCA82E3DA4C5D9F1A335F0A575C9B7AE60F3A11504E"
     },
     {
         "name": "rewards_manager_contract",
