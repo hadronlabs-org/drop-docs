@@ -1,5 +1,8 @@
 # Droplets Program
 
+⚠️ **Important note:** Drop is winding down operations, and the Droplets Program has officially ended. A snapshot of all Droplet balances was taken on November 13. [Learn more →](https://medium.com/@drop_protocol/drop-to-wind-down-operations-b2fa6138d03a)
+
+
 ## Overview
 
 Drop Protocol will have no token for the first several months of its life.
